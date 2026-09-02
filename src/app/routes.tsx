@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Outlet } from "react-router";
 import { LoginPage } from "./pages/LoginPage";
 import { DirectorateDashboard } from "./pages/DirectorateDashboard";
 import { FieldTechnicianDashboard } from "./pages/FieldTechnicianDashboard";
@@ -28,6 +28,15 @@ import { FarmerGrievances } from "./pages/FarmerGrievances";
 import { FarmerActivityLog } from "./pages/FarmerActivityLog";
 import { UserManagement } from "./pages/UserManagement";
 import { ProtectedRoute } from "./components/ProtectedRoute";
+import { AuthProvider } from "./context/AuthContext";
+
+function RootLayout() {
+  return (
+    <AuthProvider>
+      <Outlet />
+    </AuthProvider>
+  );
+}
 
 const withProtection = (Component: React.ComponentType) => {
   return () => (
@@ -40,114 +49,120 @@ const withProtection = (Component: React.ComponentType) => {
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: LoginPage,
-  },
-  {
-    path: "/dashboard/directorate",
-    Component: withProtection(DirectorateDashboard),
-  },
-  {
-    path: "/dashboard/field-technician",
-    Component: withProtection(FieldTechnicianDashboard),
-  },
-  {
-    path: "/inventory/semen",
-    Component: withProtection(SemenInventory),
-  },
-  {
-    path: "/inventory/vaccine",
-    Component: withProtection(VaccineInventory),
-  },
-  {
-    path: "/inventory/medicine",
-    Component: withProtection(MedicineInventory),
-  },
-  {
-    path: "/disease-surveillance",
-    Component: withProtection(DiseaseSurveillance),
-  },
-  {
-    path: "/training",
-    Component: withProtection(TrainingManagement),
-  },
-  {
-    path: "/mvu",
-    Component: withProtection(MVUOperations),
-  },
-  {
-    path: "/expenditure",
-    Component: withProtection(Expenditure),
-  },
-  {
-    path: "/reports",
-    Component: withProtection(FarmReports),
-  },
-  {
-    path: "/oncall-ai",
-    Component: withProtection(OnCallAI),
-  },
-  {
-    path: "/grievances",
-    Component: withProtection(Grievances),
-  },
-  {
-    path: "/service-requests",
-    Component: withProtection(ServiceRequests),
-  },
-  {
-    path: "/my-requests",
-    Component: withProtection(FieldTechnicianRequests),
-  },
-  {
-    path: "/profile",
-    Component: withProtection(UserProfile),
-  },
-  {
-    path: "/request/:requestId/action",
-    Component: withProtection(PostApprovalAction),
-  },
-  {
-    path: "/request-ai",
-    Component: withProtection(RequestAIService),
-  },
-  {
-    path: "/request-medicine",
-    Component: withProtection(RequestMedicine),
-  },
-  {
-    path: "/request-vaccine",
-    Component: withProtection(RequestVaccine),
-  },
-  {
-    path: "/log-request",
-    Component: withProtection(LogNewRequest),
-  },
-  {
-    path: "/log-request/ai",
-    Component: withProtection(LogAIServiceRequest),
-  },
-  {
-    path: "/log-request/medicine",
-    Component: withProtection(LogMedicineRequest),
-  },
-  {
-    path: "/log-request/vaccine",
-    Component: withProtection(LogVaccineRequest),
-  },
-  {
-    path: "/log-request/disease",
-    Component: withProtection(LogDiseaseRequest),
-  },
-  {
-    path: "/farmer-grievances",
-    Component: withProtection(FarmerGrievances),
-  },
-  {
-    path: "/activity-log",
-    Component: withProtection(FarmerActivityLog),
-  },
-  {
-    path: "/user-management",
-    Component: withProtection(UserManagement),
+    Component: RootLayout,
+    children: [
+      {
+        index: true,
+        Component: LoginPage,
+      },
+      {
+        path: "dashboard/directorate",
+        Component: withProtection(DirectorateDashboard),
+      },
+      {
+        path: "dashboard/field-technician",
+        Component: withProtection(FieldTechnicianDashboard),
+      },
+      {
+        path: "inventory/semen",
+        Component: withProtection(SemenInventory),
+      },
+      {
+        path: "inventory/vaccine",
+        Component: withProtection(VaccineInventory),
+      },
+      {
+        path: "inventory/medicine",
+        Component: withProtection(MedicineInventory),
+      },
+      {
+        path: "disease-surveillance",
+        Component: withProtection(DiseaseSurveillance),
+      },
+      {
+        path: "training",
+        Component: withProtection(TrainingManagement),
+      },
+      {
+        path: "mvu",
+        Component: withProtection(MVUOperations),
+      },
+      {
+        path: "expenditure",
+        Component: withProtection(Expenditure),
+      },
+      {
+        path: "reports",
+        Component: withProtection(FarmReports),
+      },
+      {
+        path: "oncall-ai",
+        Component: withProtection(OnCallAI),
+      },
+      {
+        path: "grievances",
+        Component: withProtection(Grievances),
+      },
+      {
+        path: "service-requests",
+        Component: withProtection(ServiceRequests),
+      },
+      {
+        path: "my-requests",
+        Component: withProtection(FieldTechnicianRequests),
+      },
+      {
+        path: "profile",
+        Component: withProtection(UserProfile),
+      },
+      {
+        path: "request/:requestId/action",
+        Component: withProtection(PostApprovalAction),
+      },
+      {
+        path: "request-ai",
+        Component: withProtection(RequestAIService),
+      },
+      {
+        path: "request-medicine",
+        Component: withProtection(RequestMedicine),
+      },
+      {
+        path: "request-vaccine",
+        Component: withProtection(RequestVaccine),
+      },
+      {
+        path: "log-request",
+        Component: withProtection(LogNewRequest),
+      },
+      {
+        path: "log-request/ai",
+        Component: withProtection(LogAIServiceRequest),
+      },
+      {
+        path: "log-request/medicine",
+        Component: withProtection(LogMedicineRequest),
+      },
+      {
+        path: "log-request/vaccine",
+        Component: withProtection(LogVaccineRequest),
+      },
+      {
+        path: "log-request/disease",
+        Component: withProtection(LogDiseaseRequest),
+      },
+      {
+        path: "farmer-grievances",
+        Component: withProtection(FarmerGrievances),
+      },
+      {
+        path: "activity-log",
+        Component: withProtection(FarmerActivityLog),
+      },
+      {
+        path: "user-management",
+        Component: withProtection(UserManagement),
+      },
+    ],
   },
 ]);
