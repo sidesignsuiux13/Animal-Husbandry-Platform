@@ -35,10 +35,10 @@ export function Header() {
         </div>
         <div>
           <h2 className="font-semibold" style={{ color: '#003366', fontSize: '0.875rem' }}>
-            ARD Digital Platform
+            Animal Husbandry Digital Platform
           </h2>
           <p className="text-xs" style={{ color: '#6B7280' }}>
-            F&ARD Department, Govt. of Odisha
+            Department of Animal Husbandry & Dairying, Govt. of India
           </p>
         </div>
       </div>

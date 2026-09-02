@@ -373,9 +373,9 @@ export function VaccineInventory() {
                       Farmer
                     </label>
                     <div className="flex items-center justify-between p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB' }}>
-                      <span style={{ color: '#1A1A1A' }}>Ramesh Pradhan</span>
+                      <span style={{ color: '#1A1A1A' }}>Ramesh Yadav</span>
                       <Badge className="px-2 py-1" style={{ backgroundColor: '#DCFCE7', color: '#16A34A' }}>
-                        Fetched from Krushak Odisha ✓
+                        Fetched from National Farmer Registry ✓
                       </Badge>
                     </div>
                   </div>
@@ -386,7 +386,7 @@ export function VaccineInventory() {
                       Livestock
                     </label>
                     <div className="flex items-center justify-between p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB' }}>
-                      <span style={{ color: '#1A1A1A' }}>OD1234 Holstein Friesian</span>
+                      <span style={{ color: '#1A1A1A' }}>IN1234 Holstein Friesian</span>
                       <Badge className="px-2 py-1" style={{ backgroundColor: '#DBEAFE', color: '#1D4ED8' }}>
                         Fetched from Bharat Pashudhan ✓
                       </Badge>
@@ -457,9 +457,9 @@ export function VaccineInventory() {
                         <SelectValue placeholder="Select source" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="salipur">Salipur Block</SelectItem>
-                        <SelectItem value="cuttack">Cuttack Block</SelectItem>
-                        <SelectItem value="puri">Puri Block</SelectItem>
+                        <SelectItem value="bakshi-ka-talab">Bakshi Ka Talab Block</SelectItem>
+                        <SelectItem value="lucknow">Lucknow Block</SelectItem>
+                        <SelectItem value="pune">Pune Block</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -541,12 +541,12 @@ export function VaccineInventory() {
                     {/* Result Card */}
                     <div className="p-4 rounded-lg" style={{ backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB' }}>
                       <Badge className="mb-3 px-3 py-1" style={{ backgroundColor: '#DCFCE7', color: '#16A34A' }}>
-                        ✓ Fetched from Krushak Odisha
+                        ✓ Fetched from National Farmer Registry
                       </Badge>
 
                       <div className="space-y-2">
-                        <h4 className="font-semibold" style={{ color: '#003366' }}>Ramesh Pradhan</h4>
-                        <p className="text-sm" style={{ color: '#6B7280' }}>Cuttack | Salipur Block</p>
+                        <h4 className="font-semibold" style={{ color: '#003366' }}>Ramesh Yadav</h4>
+                        <p className="text-sm" style={{ color: '#6B7280' }}>Lucknow | Bakshi Ka Talab Block</p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Mobile: 987654XXXX</p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Livestock: 3 cattle</p>
                       </div>
@@ -563,7 +563,7 @@ export function VaccineInventory() {
                       <Input
                         placeholder="Enter Cattle Tag Number"
                         className="mb-3"
-                        defaultValue="OD1234"
+                        defaultValue="IN1234"
                         style={{ borderColor: '#E5E7EB' }}
                       />
                       <Button className="w-full" style={{ backgroundColor: '#FF6600', color: 'white' }}>
@@ -578,7 +578,7 @@ export function VaccineInventory() {
                       </Badge>
 
                       <div className="space-y-2 mb-4">
-                        <p className="text-sm" style={{ color: '#6B7280' }}>Tag: <strong style={{ color: '#003366' }}>OD1234</strong></p>
+                        <p className="text-sm" style={{ color: '#6B7280' }}>Tag: <strong style={{ color: '#003366' }}>IN1234</strong></p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Holstein Friesian | 4 yrs</p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Last AI: 3 months ago</p>
                       </div>
@@ -605,7 +605,7 @@ export function VaccineInventory() {
                     <div>
                       <label className="block text-sm mb-2" style={{ color: '#6B7280' }}>Farmer</label>
                       <Input
-                        value="Ramesh Pradhan"
+                        value="Ramesh Yadav"
                         disabled
                         style={{ borderColor: '#E5E7EB', backgroundColor: '#F9FAFB' }}
                       />
@@ -656,11 +656,11 @@ export function VaccineInventory() {
                       <label className="block text-sm mb-2" style={{ color: '#6B7280' }}>Source</label>
                       <Select>
                         <SelectTrigger style={{ borderColor: '#E5E7EB' }}>
-                          <SelectValue placeholder="Salipur Block" />
+                          <SelectValue placeholder="Bakshi Ka Talab Block" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="salipur">Salipur Block</SelectItem>
-                          <SelectItem value="cuttack">Cuttack Block</SelectItem>
+                          <SelectItem value="bakshi-ka-talab">Bakshi Ka Talab Block</SelectItem>
+                          <SelectItem value="lucknow">Lucknow Block</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -720,7 +720,7 @@ export function VaccineInventory() {
                     <TableBody>
                       <TableRow>
                         <TableCell style={{ color: '#6B7280' }}>28 May</TableCell>
-                        <TableCell style={{ color: '#1A1A1A' }}>Kendupalli</TableCell>
+                        <TableCell style={{ color: '#1A1A1A' }}>Chinhat</TableCell>
                         <TableCell style={{ color: '#1A1A1A' }}>FMD</TableCell>
                         <TableCell style={{ color: '#1A1A1A' }}>45</TableCell>
                         <TableCell>
@@ -731,7 +731,7 @@ export function VaccineInventory() {
                       </TableRow>
                       <TableRow style={{ backgroundColor: '#F9FAFB' }}>
                         <TableCell style={{ color: '#6B7280' }}>02 Jun</TableCell>
-                        <TableCell style={{ color: '#1A1A1A' }}>Salipur</TableCell>
+                        <TableCell style={{ color: '#1A1A1A' }}>Bakshi Ka Talab</TableCell>
                         <TableCell style={{ color: '#1A1A1A' }}>HS</TableCell>
                         <TableCell style={{ color: '#1A1A1A' }}>30</TableCell>
                         <TableCell>
@@ -742,7 +742,7 @@ export function VaccineInventory() {
                       </TableRow>
                       <TableRow>
                         <TableCell style={{ color: '#6B7280' }}>08 Jun</TableCell>
-                        <TableCell style={{ color: '#1A1A1A' }}>Banki</TableCell>
+                        <TableCell style={{ color: '#1A1A1A' }}>Malihabad</TableCell>
                         <TableCell style={{ color: '#1A1A1A' }}>BQ</TableCell>
                         <TableCell style={{ color: '#1A1A1A' }}>25</TableCell>
                         <TableCell>
@@ -1260,7 +1260,7 @@ export function VaccineInventory() {
                   <TableBody>
                     <TableRow>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Rajan Kumar</TableCell>
-                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Cuttack</TableCell>
+                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Lucknow</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>FMD</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>24 doses</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>₹1,200</TableCell>
@@ -1271,7 +1271,7 @@ export function VaccineInventory() {
                     </TableRow>
                     <TableRow style={{ backgroundColor: '#F9FAFB' }}>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Deepak Singh</TableCell>
-                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Balasore</TableCell>
+                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Bhopal</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>HS</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>18 doses</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>₹900</TableCell>
@@ -1282,7 +1282,7 @@ export function VaccineInventory() {
                     </TableRow>
                     <TableRow>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Sunita Roy</TableCell>
-                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Puri</TableCell>
+                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Pune</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>BQ</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>12 doses</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>₹600</TableCell>
@@ -1381,11 +1381,11 @@ export function VaccineInventory() {
                   </TableHeader>
                   <TableBody>
                     {[
-                      { farmer: "Ramesh P", vaccine: "FMD", batch: "VB-441", disease: "FMD", animal: "Cattle", date: "22 May", charges: "₹150" },
-                      { farmer: "Sunita B", vaccine: "HS", batch: "VB-442", disease: "HS", animal: "Cattle", date: "21 May", charges: "₹200" },
-                      { farmer: "Manoj N", vaccine: "PPR", batch: "VB-443", disease: "PPR", animal: "Goat", date: "20 May", charges: "₹120" },
-                      { farmer: "Priya S", vaccine: "FMD", batch: "VB-441", disease: "FMD", animal: "Cattle", date: "19 May", charges: "₹150" },
-                      { farmer: "Bikash J", vaccine: "BQ", batch: "VB-445", disease: "BQ", animal: "Cattle", date: "18 May", charges: "₹180" },
+                      { farmer: "Ramesh Y", vaccine: "FMD", batch: "VB-441", disease: "FMD", animal: "Cattle", date: "22 May", charges: "₹150" },
+                      { farmer: "Sunita D", vaccine: "HS", batch: "VB-442", disease: "HS", animal: "Cattle", date: "21 May", charges: "₹200" },
+                      { farmer: "Manoj K", vaccine: "PPR", batch: "VB-443", disease: "PPR", animal: "Goat", date: "20 May", charges: "₹120" },
+                      { farmer: "Priya V", vaccine: "FMD", batch: "VB-441", disease: "FMD", animal: "Cattle", date: "19 May", charges: "₹150" },
+                      { farmer: "Vikas K", vaccine: "BQ", batch: "VB-445", disease: "BQ", animal: "Cattle", date: "18 May", charges: "₹180" },
                     ].map((row, index) => (
                       <TableRow key={index} style={index % 2 === 1 ? { backgroundColor: '#F9FAFB' } : {}}>
                         <TableCell style={{ color: '#1A1A1A', fontSize: '10px' }}>{row.farmer}</TableCell>

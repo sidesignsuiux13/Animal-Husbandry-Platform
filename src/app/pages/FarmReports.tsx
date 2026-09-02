@@ -33,36 +33,36 @@ export function FarmReports() {
 
   const farmReportsData = [
     {
-      farm: "Govt Cattle Farm Cuttack",
+      farm: "Govt Cattle Farm Lucknow",
       type: "Govt",
-      district: "Cuttack",
+      district: "Lucknow",
       submitted: "21 May",
       status: "submitted",
       statusText: "Submitted",
       alert: "⚠ 2 vacancies",
     },
     {
-      farm: "OBPI Cuttack",
+      farm: "OBPI Lucknow",
       type: "Govt",
-      district: "Cuttack",
+      district: "Lucknow",
       submitted: "22 May",
       status: "reviewed",
       statusText: "Reviewed",
       alert: null,
     },
     {
-      farm: "Pvt Farm Banki",
+      farm: "Pvt Farm Malihabad",
       type: "Private",
-      district: "Cuttack",
+      district: "Lucknow",
       submitted: "20 May",
       status: "draft",
       statusText: "Draft",
       alert: null,
     },
     {
-      farm: "Coop Farm Tigiria",
+      farm: "Coop Farm Sarojini Nagar",
       type: "Coop",
-      district: "Cuttack",
+      district: "Lucknow",
       submitted: "—",
       status: "not-started",
       statusText: "Not Started",
@@ -71,7 +71,7 @@ export function FarmReports() {
     {
       farm: "Govt Dairy Jagatpur",
       type: "Govt",
-      district: "Cuttack",
+      district: "Lucknow",
       submitted: "—",
       status: "not-started",
       statusText: "Not Started",
@@ -80,34 +80,34 @@ export function FarmReports() {
   ];
 
   const milkProductivityData = [
-    { month: "Dec", Cuttack: 2650, Puri: 2400, Balasore: 2200 },
-    { month: "Jan", Cuttack: 2720, Puri: 2450, Balasore: 2280 },
-    { month: "Feb", Cuttack: 2680, Puri: 2420, Balasore: 2250 },
-    { month: "Mar", Cuttack: 2780, Puri: 2500, Balasore: 2320 },
-    { month: "Apr", Cuttack: 2810, Puri: 2480, Balasore: 2340 },
-    { month: "May", Cuttack: 2840, Puri: 2520, Balasore: 2360 },
+    { month: "Dec", Lucknow: 2650, Pune: 2400, Bhopal: 2200 },
+    { month: "Jan", Lucknow: 2720, Pune: 2450, Bhopal: 2280 },
+    { month: "Feb", Lucknow: 2680, Pune: 2420, Bhopal: 2250 },
+    { month: "Mar", Lucknow: 2780, Pune: 2500, Bhopal: 2320 },
+    { month: "Apr", Lucknow: 2810, Pune: 2480, Bhopal: 2340 },
+    { month: "May", Lucknow: 2840, Pune: 2520, Bhopal: 2360 },
   ];
 
   const submissionStatusData = [
-    { district: "Cuttack", submitted: 8, pending: 4 },
-    { district: "Puri", submitted: 12, pending: 2 },
-    { district: "Balasore", submitted: 10, pending: 3 },
-    { district: "Khordha", submitted: 15, pending: 1 },
+    { district: "Lucknow", submitted: 8, pending: 4 },
+    { district: "Pune", submitted: 12, pending: 2 },
+    { district: "Bhopal", submitted: 10, pending: 3 },
+    { district: "Gurugram", submitted: 15, pending: 1 },
   ];
 
   const staffShortagesData = [
-    { farm: "Govt Cattle Farm Cuttack", position: "Veterinarian", vacancies: 1 },
-    { farm: "Govt Cattle Farm Cuttack", position: "Attendants", vacancies: 2 },
-    { farm: "OBPI Balasore", position: "Veterinarian", vacancies: 1 },
+    { farm: "Govt Cattle Farm Lucknow", position: "Veterinarian", vacancies: 1 },
+    { farm: "Govt Cattle Farm Lucknow", position: "Attendants", vacancies: 2 },
+    { farm: "OBPI Bhopal", position: "Veterinarian", vacancies: 1 },
     { farm: "Govt Dairy Jagatpur", position: "Driver", vacancies: 1 },
-    { farm: "Pvt Farm Salipur", position: "Attendants", vacancies: 3 },
+    { farm: "Pvt Farm Bakshi Ka Talab", position: "Attendants", vacancies: 3 },
   ];
 
   const aiSuccessData = [
-    { farm: "Govt Cuttack", procedures: 18, confirmed: 12, rate: 67 },
+    { farm: "Govt Lucknow", procedures: 18, confirmed: 12, rate: 67 },
     { farm: "OBPI", procedures: 22, confirmed: 18, rate: 82 },
-    { farm: "Pvt Salipur", procedures: 15, confirmed: 9, rate: 60 },
-    { farm: "Coop Banki", procedures: 20, confirmed: 15, rate: 75 },
+    { farm: "Pvt Bakshi Ka Talab", procedures: 15, confirmed: 9, rate: 60 },
+    { farm: "Coop Malihabad", procedures: 20, confirmed: 15, rate: 75 },
   ];
 
   const getStatusBadge = (status: string) => {
@@ -180,10 +180,10 @@ export function FarmReports() {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="all-districts">All Districts</SelectItem>
-                          <SelectItem value="cuttack">Cuttack</SelectItem>
-                          <SelectItem value="puri">Puri</SelectItem>
-                          <SelectItem value="balasore">Balasore</SelectItem>
+                          <SelectItem value="all-districts">All States</SelectItem>
+                          <SelectItem value="lucknow">Lucknow</SelectItem>
+                          <SelectItem value="pune">Pune</SelectItem>
+                          <SelectItem value="bhopal">Bhopal</SelectItem>
                         </SelectContent>
                       </Select>
 
@@ -330,14 +330,14 @@ export function FarmReports() {
                         <Legend />
                         <Line
                           type="monotone"
-                          dataKey="Cuttack"
+                          dataKey="Lucknow"
                           stroke="#003366"
                           strokeWidth={2}
                         />
-                        <Line type="monotone" dataKey="Puri" stroke="#22C55E" strokeWidth={2} />
+                        <Line type="monotone" dataKey="Pune" stroke="#22C55E" strokeWidth={2} />
                         <Line
                           type="monotone"
-                          dataKey="Balasore"
+                          dataKey="Bhopal"
                           stroke="#FF6600"
                           strokeWidth={2}
                         />

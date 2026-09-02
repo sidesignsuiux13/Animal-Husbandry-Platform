@@ -20,7 +20,7 @@ export function FarmerActivityLog() {
           icon: Circle,
           iconColor: "#3B82F6",
           type: "AI Service Request",
-          animal: "OD1234 Holstein Friesian",
+          animal: "IN1234 Holstein Friesian",
           technician: "Rajan Kumar assigned",
           status: "Completed",
           statusColor: "#10B981",
@@ -39,7 +39,7 @@ export function FarmerActivityLog() {
           icon: Pill,
           iconColor: "#10B981",
           type: "Medicine Service",
-          animal: "OD1234",
+          animal: "IN1234",
           medicines: "Oxytetracycline × 2, Multivitamin × 1",
           charges: "₹200 paid ✓",
           status: "Pending Block Approval",
@@ -56,9 +56,9 @@ export function FarmerActivityLog() {
           icon: Microscope,
           iconColor: "#FF6600",
           type: "Disease Sample",
-          animal: "OD3456",
+          animal: "IN3456",
           symptoms: "Fever, Lameness",
-          sample: "Blood | DDL Cuttack",
+          sample: "Blood | DDL Lucknow",
           status: "Under Testing",
           statusColor: "#F59E0B",
           expected: "Expected report: 25 May 2025",
@@ -74,7 +74,7 @@ export function FarmerActivityLog() {
           icon: Syringe,
           iconColor: "#A855F7",
           type: "Vaccination",
-          animal: "OD1234",
+          animal: "IN1234",
           vaccine: "FMD Vaccine | 2 doses",
           batch: "VB-2025-0441",
           charges: "₹150 paid ✓",
@@ -108,7 +108,7 @@ export function FarmerActivityLog() {
           icon: Circle,
           iconColor: "#3B82F6",
           type: "AI Service Request",
-          animal: "OD1235",
+          animal: "IN1235",
           status: "Completed",
           statusColor: "#10B981",
           rating: 4,
@@ -137,9 +137,9 @@ export function FarmerActivityLog() {
                   My Service History
                 </h1>
                 <p className="text-sm mb-2" style={{ color: "#6B7280" }}>
-                  All requests and services — Ramesh Pradhan
+                  All requests and services — Ramesh Yadav
                 </p>
-                <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Salipur, Cuttack" />
+                <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Bakshi Ka Talab, Lucknow" />
               </div>
               <Button variant="outline">
                 <Download className="w-4 h-4 mr-2" />

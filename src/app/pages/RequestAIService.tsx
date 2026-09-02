@@ -19,9 +19,9 @@ export function RequestAIService() {
   const [confirmed, setConfirmed] = useState(false);
 
   const myAnimals = [
-    { id: "OD1234", name: "Holstein Friesian", lastAI: "3 months ago" },
-    { id: "OD5678", name: "Jersey", lastAI: "6 months ago" },
-    { id: "OD9012", name: "Red Sindhi", lastAI: "Not yet" },
+    { id: "IN1234", name: "Holstein Friesian", lastAI: "3 months ago" },
+    { id: "IN5678", name: "Jersey", lastAI: "6 months ago" },
+    { id: "IN9012", name: "Red Sindhi", lastAI: "Not yet" },
   ];
 
   const handleConfirm = () => {
@@ -39,7 +39,7 @@ export function RequestAIService() {
               <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
                 Request AI Service
               </h1>
-              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Salipur, Cuttack" />
+              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Bakshi Ka Talab, Lucknow" />
             </div>
 
             {!confirmed ? (

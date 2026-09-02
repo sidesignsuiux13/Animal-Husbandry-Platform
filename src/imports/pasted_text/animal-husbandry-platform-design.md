@@ -1,6 +1,6 @@
 Design a high-fidelity government web application 
-called the "ARD Digital Platform" for the F&ARD 
-Department, Government of Odisha. This is a 
+called the "Animal Husbandry Digital Platform" for the DAHD 
+Department, Government of India. This is a 
 livestock management system for the Directorate 
 of Animal Husbandry and Veterinary Services.
 
@@ -47,9 +47,9 @@ Components to establish:
   active tab #FF6600
 
 Header bar:
-Left: OCAC logo placeholder + 
-      "ARD Digital Platform | 
-       F&ARD Department, Govt. of Odisha"
+Left: NIC logo placeholder + 
+      "Animal Husbandry Digital Platform | 
+       Department of Animal Husbandry & Dairying, Govt. of India"
 Right: notification bell + 
        role badge + user name
 
@@ -60,9 +60,9 @@ Right: notification bell +
 Clean centered card on #F5F5F5 background.
 
 Card contents (top to bottom):
-- OCAC logo placeholder (64px, centered)
-- "ARD Digital Platform" (H1, #003366)
-- "F&ARD Department, Government of Odisha" 
+- NIC logo placeholder (64px, centered)
+- "Animal Husbandry Digital Platform" (H1, #003366)
+- "Department of Animal Husbandry & Dairying, Government of India" 
   (subtitle, grey)
 - Divider line
 - Email input field
@@ -76,8 +76,8 @@ Card contents (top to bottom):
   Each button shows role name + 
   department/location below
 
-Bottom: "Powered by OCAC | 
-Government of Odisha" footer
+Bottom: "Powered by NIC | 
+Government of India" footer
 
 ---
 
@@ -86,7 +86,7 @@ Government of Odisha" footer
 Full layout with sidebar + main content.
 
 Sidebar (left, #003366):
-OCAC logo at top
+NIC logo at top
 Navigation items with icons:
 🏠 Dashboard (active, #FF6600 highlight)
 🧪 Semen Management
@@ -108,7 +108,7 @@ Directorate Admin | Today: 22 May 2025"
 Row 1 — 4 stat cards:
 Card 1: Total Stock Units
   Icon: 📦 | Value: 4,82,350
-  Subtitle: "doses across state"
+  Subtitle: "doses across India"
   Left border: #003366
 
 Card 2: Services This Month
@@ -129,13 +129,13 @@ Card 4: Active Grievances
 Row 2 — two panels:
 
 Left panel (60%): 
-"District Utilisation Map — Odisha"
-Show all 30 Odisha districts as a 
+"National Utilisation Map"
+Show states and UTs across India as a 
 clean grid/tile layout
 Each district = small rounded rectangle 
 with district name + utilisation %
 Colour coded:
-  Red tiles: Koraput 28%, Malkangiri 31%, 
+  Red tiles: Jaipur 28%, Malkangiri 31%, 
              Nabarangpur 35%, Nuapada 38%
   Amber tiles: Kalahandi 45%, Gajapati 48%,
                Kandhamal 52%, Boudh 55%,
@@ -149,13 +149,13 @@ Colour legend below:
 Right panel (40%):
 "Pending Approvals"
 List of 5 items:
-  🧪 Semen restocking — AIT Salipur
+  🧪 Semen restocking — AIT Bakshi Ka Talab
      "50 doses, Urgent" — 2 hrs ago
      [Approve] [View] buttons
-  💉 Vaccine restock — BVO Koraput
+  💉 Vaccine restock — BVO Jaipur
      "200 FMD doses" — 4 hrs ago
      [Approve] [View] buttons
-  💊 Medicine P0 — LAC Phulbani
+  💊 Medicine P0 — LAC Ranchi
      "Ivermectin critical" — 5 hrs ago
      [Approve] [View] buttons
   🎓 Training approval — Dr. Sujit
@@ -174,7 +174,7 @@ covering all modules
 ## SCREEN 3: DASHBOARD — FIELD TECHNICIAN VIEW
 
 Same sidebar layout.
-Role badge: "AIT — Salipur LAC, Cuttack"
+Role badge: "AIT — Bakshi Ka Talab LAC, Lucknow"
 
 4 stat cards (scoped to technician):
 Card 1: My Stock — 85 doses
@@ -227,7 +227,7 @@ Location | Type | Animal | Code |
 Qty Allocated | Qty Delivered | Date | Status
 
 Row examples:
-Salipur LAC | Normal Cattle | Cattle | 
+Bakshi Ka Talab LAC | Normal Cattle | Cattle | 
 SC-2025-0441 | 100 | 82 | 15 May | 🟢 Healthy
 
-Koraput LAC | Sex Sorted | Cattl
+Jaipur LAC | Sex Sorted | Cattl

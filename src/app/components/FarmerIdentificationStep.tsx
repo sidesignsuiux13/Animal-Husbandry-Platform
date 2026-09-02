@@ -38,17 +38,17 @@ export function FarmerIdentificationStep({ onComplete }: Props) {
   });
 
   const mockAnimals: Animal[] = [
-    { id: "OD1234", breed: "Holstein Friesian", age: "4 years", lastService: "Last AI: 3 months ago" },
-    { id: "OD1235", breed: "Sahiwal", age: "2 years", lastService: "Last vaccine: FMD" },
+    { id: "IN1234", breed: "Holstein Friesian", age: "4 years", lastService: "Last AI: 3 months ago" },
+    { id: "IN1235", breed: "Sahiwal", age: "2 years", lastService: "Last vaccine: FMD" },
   ];
 
   const handleSearch = () => {
     if (searchQuery === "9876543210" || searchQuery.length === 12) {
       setFarmerData({
-        name: "Ramesh Pradhan",
+        name: "Ramesh Yadav",
         mobile: "987654XXXX",
         aadhaar: "XXXX-XXXX-1234",
-        village: "Salipur Village, Cuttack",
+        village: "Bakshi Ka Talab Village, Lucknow",
         livestock: 3,
       });
       setFarmerFound(true);
@@ -125,7 +125,7 @@ export function FarmerIdentificationStep({ onComplete }: Props) {
                   <span className="text-white text-xs">✓</span>
                 </div>
                 <span className="font-medium" style={{ color: "#065F46" }}>
-                  Fetched from Krushak Odisha
+                  Fetched from National Farmer Registry
                 </span>
               </div>
               <h3 className="text-lg font-bold mb-1" style={{ color: "#003366" }}>
@@ -221,13 +221,13 @@ export function FarmerIdentificationStep({ onComplete }: Props) {
                 <label className="block text-sm font-medium mb-2" style={{ color: "#374151" }}>
                   Block
                 </label>
-                <Input value="Salipur" disabled />
+                <Input value="Bakshi Ka Talab" disabled />
               </div>
               <div>
                 <label className="block text-sm font-medium mb-2" style={{ color: "#374151" }}>
                   District
                 </label>
-                <Input value="Cuttack" disabled />
+                <Input value="Lucknow" disabled />
               </div>
             </div>
           </div>

@@ -574,17 +574,17 @@ export function MedicineInventory() {
                         <SelectValue placeholder="Search farmer by name or mobile" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="ramesh">Ramesh Pradhan</SelectItem>
-                        <SelectItem value="sunita">Sunita Behera</SelectItem>
-                        <SelectItem value="manoj">Manoj Nayak</SelectItem>
+                        <SelectItem value="ramesh">Ramesh Yadav</SelectItem>
+                        <SelectItem value="sunita">Sunita Devi</SelectItem>
+                        <SelectItem value="manoj">Manoj Kumar</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
                   {/* Farmer Card */}
                   <div className="p-4 rounded-lg mb-4" style={{ backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB' }}>
-                    <h4 className="font-semibold mb-2" style={{ color: '#003366' }}>Ramesh Pradhan</h4>
-                    <p className="text-sm" style={{ color: '#6B7280' }}>Cuttack | Salipur Block</p>
+                    <h4 className="font-semibold mb-2" style={{ color: '#003366' }}>Ramesh Yadav</h4>
+                    <p className="text-sm" style={{ color: '#6B7280' }}>Lucknow | Bakshi Ka Talab Block</p>
                     <p className="text-sm" style={{ color: '#6B7280' }}>Mobile: 987654XXXX</p>
                   </div>
 
@@ -632,12 +632,12 @@ export function MedicineInventory() {
                   <div className="space-y-4">
                     <div>
                       <label className="block text-sm mb-2" style={{ color: '#6B7280' }}>Farmer</label>
-                      <Input value="Ramesh Pradhan" disabled style={{ borderColor: '#E5E7EB', backgroundColor: '#F9FAFB' }} />
+                      <Input value="Ramesh Yadav" disabled style={{ borderColor: '#E5E7EB', backgroundColor: '#F9FAFB' }} />
                     </div>
 
                     <div>
                       <label className="block text-sm mb-2" style={{ color: '#6B7280' }}>Animal Tag</label>
-                      <Input value="OD1234" disabled style={{ borderColor: '#E5E7EB', backgroundColor: '#F9FAFB' }} />
+                      <Input value="IN1234" disabled style={{ borderColor: '#E5E7EB', backgroundColor: '#F9FAFB' }} />
                     </div>
 
                     <div>
@@ -691,7 +691,7 @@ export function MedicineInventory() {
                     {/* Inventory Auto-update Notice */}
                     <div className="p-3 rounded-lg" style={{ backgroundColor: '#EFF6FF', border: '1px solid #DBEAFE' }}>
                       <p className="text-sm" style={{ color: '#1E40AF' }}>
-                        2 units will be deducted from Salipur LAC inventory on submit
+                        2 units will be deducted from Bakshi Ka Talab LAC inventory on submit
                       </p>
                     </div>
                   </div>
@@ -713,12 +713,12 @@ export function MedicineInventory() {
                     </TableHeader>
                     <TableBody>
                       {[
-                        { date: "22 May", farmer: "Ramesh P", animal: "OD1234", medicine: "Ivermectin", qty: 2, admin: "Rajan Kumar" },
-                        { date: "21 May", farmer: "Sunita B", animal: "OD2345", medicine: "Amoxicillin", qty: 1, admin: "Deepak Singh" },
-                        { date: "20 May", farmer: "Manoj N", animal: "OD3456", medicine: "Oxytocin", qty: 3, admin: "Priya Sahoo" },
-                        { date: "19 May", farmer: "Bikash J", animal: "OD4567", medicine: "Ivermectin", qty: 2, admin: "Rajan Kumar" },
-                        { date: "18 May", farmer: "Asha M", animal: "OD5678", medicine: "Dexamethasone", qty: 1, admin: "Deepak Singh" },
-                        { date: "17 May", farmer: "Ravi K", animal: "OD6789", medicine: "Meloxicam", qty: 2, admin: "Priya Sahoo" },
+                        { date: "22 May", farmer: "Ramesh Y", animal: "IN1234", medicine: "Ivermectin", qty: 2, admin: "Rajan Kumar" },
+                        { date: "21 May", farmer: "Sunita D", animal: "IN2345", medicine: "Amoxicillin", qty: 1, admin: "Deepak Singh" },
+                        { date: "20 May", farmer: "Manoj K", animal: "IN3456", medicine: "Oxytocin", qty: 3, admin: "Priya Verma" },
+                        { date: "19 May", farmer: "Vikas K", animal: "IN4567", medicine: "Ivermectin", qty: 2, admin: "Rajan Kumar" },
+                        { date: "18 May", farmer: "Asha M", animal: "IN5678", medicine: "Dexamethasone", qty: 1, admin: "Deepak Singh" },
+                        { date: "17 May", farmer: "Ravi K", animal: "IN6789", medicine: "Meloxicam", qty: 2, admin: "Priya Verma" },
                       ].map((row, index) => (
                         <TableRow key={index} style={index % 2 === 1 ? { backgroundColor: '#F9FAFB' } : {}}>
                           <TableCell style={{ color: '#6B7280', fontSize: '12px' }}>{row.date}</TableCell>
@@ -1101,12 +1101,12 @@ export function MedicineInventory() {
                 </div>
                 <div className="grid grid-cols-6 gap-1">
                   {[
-                    { name: "Koraput", intensity: 95 },
+                    { name: "Jaipur", intensity: 95 },
                     { name: "Malkangiri", intensity: 88 },
                     { name: "Kalahandi", intensity: 45 },
                     { name: "Gajapati", intensity: 35 },
-                    { name: "Cuttack", intensity: 12 },
-                    { name: "Khordha", intensity: 15 },
+                    { name: "Lucknow", intensity: 12 },
+                    { name: "Gurugram", intensity: 15 },
                     ...Array.from({ length: 24 }).map(() => ({ name: "", intensity: Math.floor(Math.random() * 60) }))
                   ].map((district, i) => (
                     <div
@@ -1169,7 +1169,7 @@ export function MedicineInventory() {
                   <TableBody>
                     <TableRow>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Ivermectin</TableCell>
-                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Koraput</TableCell>
+                      <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>Jaipur</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>8 days</TableCell>
                       <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>4x</TableCell>
                       <TableCell>

@@ -37,48 +37,48 @@ export function LoginPage() {
       name: "Dr. Arun Mishra",
       role: "Directorate Admin",
       roleLabel: "Directorate",
-      scope: "All Odisha — 30 Districts",
-      email: "admin@dahvs.odisha.gov.in",
+      scope: "All India — States & UTs",
+      email: "admin@dahd.gov.in",
       password: "Admin@123",
       color: "#003366",
       bgColor: "#003366",
     },
     {
-      name: "Dr. Pradeep Rath",
-      role: "CDVO — Cuttack District",
+      name: "Dr. Pradeep Sharma",
+      role: "CDVO — Lucknow District",
       roleLabel: "District Officer",
-      scope: "Cuttack District — 12 Blocks",
-      email: "cdvo.cuttack@dahvs.odisha.gov.in",
+      scope: "Lucknow District — 12 Blocks",
+      email: "cdvo.lucknow@dahd.gov.in",
       password: "District@123",
       color: "#14B8A6",
       bgColor: "#14B8A6",
     },
     {
-      name: "Dr. Sarita Mohanty",
-      role: "BVO — Salipur Block",
+      name: "Dr. Sarita Singh",
+      role: "BVO — Bakshi Ka Talab Block",
       roleLabel: "Block Officer",
-      scope: "Salipur Block — 8 LACs",
-      email: "bvo.salipur@dahvs.odisha.gov.in",
+      scope: "Bakshi Ka Talab Block — 8 LACs",
+      email: "bvo.bakshi-ka-talab@dahd.gov.in",
       password: "Block@123",
       color: "#A855F7",
       bgColor: "#A855F7",
     },
     {
       name: "Rajan Kumar",
-      role: "AIT — Salipur LAC",
+      role: "AIT — Bakshi Ka Talab LAC",
       roleLabel: "Field Technician",
-      scope: "Salipur LAC",
-      email: "ait.salipur@dahvs.odisha.gov.in",
+      scope: "Bakshi Ka Talab LAC",
+      email: "ait.bakshi-ka-talab@dahd.gov.in",
       password: "Field@123",
       color: "#10B981",
       bgColor: "#10B981",
     },
     {
-      name: "Ramesh Pradhan",
+      name: "Ramesh Yadav",
       role: "Farmer",
       roleLabel: "Farmer",
-      scope: "My Farm — Salipur, Cuttack",
-      email: "farmer@odisha.gov.in",
+      scope: "My Farm — Bakshi Ka Talab, Lucknow",
+      email: "farmer@dahd.gov.in",
       password: "Farmer@123",
       color: "#FF6600",
       bgColor: "#FF6600",
@@ -98,7 +98,7 @@ export function LoginPage() {
         setTimeout(() => {
           setIsLoading(false);
           setShowWelcome(false);
-          if (userRecord.email === "ait.salipur@dahvs.odisha.gov.in" || userRecord.email === "farmer@odisha.gov.in") {
+          if (userRecord.email === "ait.bakshi-ka-talab@dahd.gov.in" || userRecord.email === "farmer@dahd.gov.in") {
             navigate("/dashboard/field-technician");
           } else {
             navigate("/dashboard/directorate");
@@ -124,7 +124,7 @@ export function LoginPage() {
       setTimeout(() => {
         setIsLoading(false);
         setShowWelcome(false);
-        if (userRecord.email === "ait.salipur@dahvs.odisha.gov.in" || userRecord.email === "farmer@odisha.gov.in") {
+        if (userRecord.email === "ait.bakshi-ka-talab@dahd.gov.in" || userRecord.email === "farmer@dahd.gov.in") {
           navigate("/dashboard/field-technician");
         } else {
           navigate("/dashboard/directorate");
@@ -204,7 +204,7 @@ export function LoginPage() {
         >
           <Phone className="w-9 h-9 mx-auto mb-3 text-white" />
           <h3 className="text-base font-bold text-white mb-2">
-            Krushi Samrudhi Helpline
+            Animal Husbandry Helpline
           </h3>
           <p className="text-2xl font-bold text-white mb-2">1800-XXX-XXXX</p>
           <p className="text-xs text-blue-50 mb-1">(Toll Free)</p>
@@ -231,10 +231,10 @@ export function LoginPage() {
         <Card className="w-full max-w-md p-8 shadow-xl border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
           <div className="lg:hidden text-center mb-8">
             <h2 className="font-bold" style={{ color: '#003366' }}>
-              ARD Digital Platform
+              Animal Husbandry Digital Platform
             </h2>
             <p className="text-xs" style={{ color: '#6B7280' }}>
-              F&ARD Department, Govt. of Odisha
+              Department of Animal Husbandry & Dairying, Govt. of India
             </p>
           </div>
 
@@ -330,7 +330,7 @@ export function LoginPage() {
 
             {/* Footer */}
             <div className="pt-2 text-center text-xs" style={{ color: '#9CA3AF' }}>
-              <p>Powered by OCAC | Government of Odisha</p>
+              <p>Powered by NIC | Government of India</p>
             </div>
           </div>
         </Card>

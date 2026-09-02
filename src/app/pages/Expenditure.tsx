@@ -58,7 +58,7 @@ export function Expenditure() {
   const allocationData = [
     {
       scheme: "ADRI Disease Surveillance",
-      district: "Cuttack",
+      district: "Lucknow",
       allocated: 45,
       spent: 38,
       balance: 7,
@@ -67,7 +67,7 @@ export function Expenditure() {
     },
     {
       scheme: "Vaccine Production",
-      district: "Koraput",
+      district: "Jaipur",
       allocated: 38,
       spent: 15,
       balance: 23,
@@ -76,7 +76,7 @@ export function Expenditure() {
     },
     {
       scheme: "Bio-Medical Waste",
-      district: "Ganjam",
+      district: "Nashik",
       allocated: 22,
       spent: 16,
       balance: 6,
@@ -85,7 +85,7 @@ export function Expenditure() {
     },
     {
       scheme: "Equipment Repair",
-      district: "Sambalpur",
+      district: "Patna",
       allocated: 18,
       spent: 12,
       balance: 6,
@@ -94,7 +94,7 @@ export function Expenditure() {
     },
     {
       scheme: "MVU Operations",
-      district: "Balasore",
+      district: "Bhopal",
       allocated: 55,
       spent: 41,
       balance: 14,
@@ -112,7 +112,7 @@ export function Expenditure() {
     },
     {
       scheme: "Vaccine Production",
-      district: "Puri",
+      district: "Pune",
       allocated: 42,
       spent: 36,
       balance: 6,
@@ -121,7 +121,7 @@ export function Expenditure() {
     },
     {
       scheme: "MVU Operations",
-      district: "Cuttack",
+      district: "Lucknow",
       allocated: 68,
       spent: 54,
       balance: 14,
@@ -160,7 +160,7 @@ export function Expenditure() {
   const fundRequests = [
     {
       id: "FR-2025-0234",
-      district: "Cuttack",
+      district: "Lucknow",
       scheme: "Vaccine Production",
       amount: "₹24L",
       priority: "URGENT",
@@ -180,7 +180,7 @@ export function Expenditure() {
     },
     {
       id: "FR-2025-0215",
-      district: "Koraput",
+      district: "Jaipur",
       scheme: "MVU Operations",
       amount: "₹32L",
       priority: "Moderate",
@@ -429,7 +429,7 @@ export function Expenditure() {
                       <label className="block text-sm font-medium mb-1" style={{ color: "#374151" }}>
                         District
                       </label>
-                      <Input value="Cuttack" readOnly />
+                      <Input value="Lucknow" readOnly />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-1" style={{ color: "#374151" }}>
@@ -459,7 +459,7 @@ export function Expenditure() {
                 <div className="space-y-4">
                   <Card className="p-6">
                     <h3 className="font-semibold mb-4" style={{ color: "#003366" }}>
-                      Monthly Comparison - Cuttack
+                      Monthly Comparison - Lucknow
                     </h3>
                     <div className="space-y-4">
                       {schemes.slice(0, 3).map((scheme, idx) => (

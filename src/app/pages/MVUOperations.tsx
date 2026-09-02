@@ -37,14 +37,14 @@ export function MVUOperations() {
     may: { week1: [], week2: [], week3: [], week4: [] },
     jun: {
       week1: [
-        { village: "Kendupalli", block: "Salipur Block" },
-        { village: "Barapal", block: "Salipur Block" },
+        { village: "Chinhat", block: "Bakshi Ka Talab Block" },
+        { village: "Kakori", block: "Bakshi Ka Talab Block" },
       ],
       week2: [
-        { village: "Tigiria", block: "Tigiria Block" },
+        { village: "Sarojini Nagar", block: "Sarojini Nagar Block" },
         { village: "Niali", block: "Niali Block" },
       ],
-      week3: [{ village: "Banki", block: "Banki Block" }],
+      week3: [{ village: "Malihabad", block: "Malihabad Block" }],
       week4: [],
     },
     jul: { week1: [], week2: [], week3: [], week4: [] },
@@ -135,7 +135,7 @@ export function MVUOperations() {
                   <CardHeader>
                     <CardTitle>Submit 3-Month Tour Plan</CardTitle>
                     <div className="text-sm text-gray-600">
-                      MVU: MVU-CUT-04 | BVO: Dr. Sarita Mohanty
+                      MVU: MVU-CUT-04 | BVO: Dr. Sarita Singh
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-6">
@@ -267,7 +267,7 @@ export function MVUOperations() {
                   <CardHeader>
                     <CardTitle>Review Submitted Plan</CardTitle>
                     <div className="text-sm text-gray-600 space-y-1">
-                      <p>Submitted by: BVO Dr. Sarita Mohanty</p>
+                      <p>Submitted by: BVO Dr. Sarita Singh</p>
                       <p className="flex items-center gap-2">
                         Submitted: 20 May 2025 | Status:{" "}
                         <Badge className="bg-yellow-100 text-yellow-800 border-yellow-200">

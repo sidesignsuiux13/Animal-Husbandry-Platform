@@ -87,7 +87,7 @@ export function UserProfile() {
                       <div>
                         <div className="text-sm" style={{ color: "#6B7280" }}>Department</div>
                         <div className="font-medium" style={{ color: "#003366" }}>
-                          F&ARD, Govt of Odisha
+                          DAHD, Govt of India
                         </div>
                       </div>
                     </div>
@@ -156,7 +156,7 @@ export function UserProfile() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="english">English</SelectItem>
-                          <SelectItem value="odia">Odia (ଓଡ଼ିଆ)</SelectItem>
+                          <SelectItem value="hindi">Hindi (ଓଡ଼ିଆ)</SelectItem>
                           <SelectItem value="hindi">Hindi (हिंदी)</SelectItem>
                         </SelectContent>
                       </Select>
@@ -165,13 +165,13 @@ export function UserProfile() {
                       <label className="block text-sm mb-2" style={{ color: "#6B7280" }}>
                         Secondary Language
                       </label>
-                      <Select defaultValue="odia">
+                      <Select defaultValue="hindi">
                         <SelectTrigger>
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="english">English</SelectItem>
-                          <SelectItem value="odia">Odia (ଓଡ଼ିଆ)</SelectItem>
+                          <SelectItem value="hindi">Hindi (ଓଡ଼ିଆ)</SelectItem>
                           <SelectItem value="hindi">Hindi (हिंदी)</SelectItem>
                         </SelectContent>
                       </Select>

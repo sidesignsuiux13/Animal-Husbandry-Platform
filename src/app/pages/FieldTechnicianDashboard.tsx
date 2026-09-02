@@ -22,7 +22,7 @@ export function FieldTechnicianDashboard() {
       icon: Package,
       title: "My Stock",
       value: "85",
-      subtitle: "Salipur LAC only",
+      subtitle: "Bakshi Ka Talab LAC only",
       borderColor: "#003366",
     },
     {
@@ -58,7 +58,7 @@ export function FieldTechnicianDashboard() {
 
   const priorityTasks = [
     { id: "SR-1040", type: "disease", status: "Act Now", desc: "Disease sample", color: "#10B981", icon: "🟢" },
-    { id: "SR-1042", type: "ai", status: "AI Service 9AM", desc: "Ramesh Pradhan", color: "#F59E0B", icon: "🟡" },
+    { id: "SR-1042", type: "ai", status: "AI Service 9AM", desc: "Ramesh Yadav", color: "#F59E0B", icon: "🟡" },
     { id: "SR-1041", type: "medicine", status: "Awaiting approval", desc: "Medicine request", color: "#3B82F6", icon: "🔵" },
   ];
 
@@ -72,7 +72,7 @@ export function FieldTechnicianDashboard() {
   // Farmer data
   const myAnimals = [
     {
-      id: "OD1234",
+      id: "IN1234",
       breed: "Holstein Friesian",
       age: "4 years",
       lastAI: "3 months ago",
@@ -80,7 +80,7 @@ export function FieldTechnicianDashboard() {
       health: "Good",
     },
     {
-      id: "OD5678",
+      id: "IN5678",
       breed: "Jersey",
       age: "2 years",
       lastAI: "6 months ago",
@@ -88,7 +88,7 @@ export function FieldTechnicianDashboard() {
       health: "Good",
     },
     {
-      id: "OD9012",
+      id: "IN9012",
       breed: "Red Sindhi",
       age: "5 years",
       lastAI: "Not yet",
@@ -101,7 +101,7 @@ export function FieldTechnicianDashboard() {
     {
       date: "22 May",
       type: "AI Service",
-      animal: "OD1234",
+      animal: "IN1234",
       provider: "Rajan Kumar",
       status: "Completed",
       rating: 5,
@@ -109,7 +109,7 @@ export function FieldTechnicianDashboard() {
     {
       date: "15 May",
       type: "Medicine",
-      animal: "OD1234",
+      animal: "IN1234",
       provider: "Ivermectin",
       status: "Administered",
       rating: 0,
@@ -117,7 +117,7 @@ export function FieldTechnicianDashboard() {
     {
       date: "08 May",
       type: "Disease Test",
-      animal: "OD1234",
+      animal: "IN1234",
       provider: "DDL-2025-0244",
       status: "Report Ready",
       rating: 0,
@@ -140,15 +140,15 @@ export function FieldTechnicianDashboard() {
             {isAIT && (
               <ScopeBadge
                 scope="lac"
-                scopeLabel="Salipur LAC"
-                subLabel="Salipur Block, Cuttack"
+                scopeLabel="Bakshi Ka Talab LAC"
+                subLabel="Bakshi Ka Talab Block, Lucknow"
               />
             )}
             {isFarmer && (
               <ScopeBadge
                 scope="lac"
                 scopeLabel="My Farm"
-                subLabel="Salipur, Cuttack"
+                subLabel="Bakshi Ka Talab, Lucknow"
               />
             )}
           </div>
@@ -228,7 +228,7 @@ export function FieldTechnicianDashboard() {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="font-semibold mb-1" style={{ color: '#003366' }}>
-                        Semen Inventory — Salipur Block
+                        Semen Inventory — Bakshi Ka Talab Block
                       </h3>
                       <p className="text-xs" style={{ color: '#6B7280' }}>
                         All 8 LACs | Updated 22 May
@@ -241,14 +241,14 @@ export function FieldTechnicianDashboard() {
 
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     {[
-                      { lac: "Salipur LAC", doses: 82, color: "#10B981", current: true },
-                      { lac: "Kendupalli LAC", doses: 45, color: "#F59E0B", current: false },
-                      { lac: "Barapal LAC", doses: 12, color: "#EF4444", current: false },
-                      { lac: "Tigiria LAC", doses: 68, color: "#10B981", current: false },
-                      { lac: "Nandpur LAC", doses: 35, color: "#F59E0B", current: false },
-                      { lac: "Gobindpur LAC", doses: 8, color: "#EF4444", current: false },
-                      { lac: "Malipada LAC", doses: 54, color: "#10B981", current: false },
-                      { lac: "Bentapur LAC", doses: 22, color: "#F59E0B", current: false },
+                      { lac: "Bakshi Ka Talab LAC", doses: 82, color: "#10B981", current: true },
+                      { lac: "Chinhat LAC", doses: 45, color: "#F59E0B", current: false },
+                      { lac: "Kakori LAC", doses: 12, color: "#EF4444", current: false },
+                      { lac: "Sarojini Nagar LAC", doses: 68, color: "#10B981", current: false },
+                      { lac: "Mohanlalganj LAC", doses: 35, color: "#F59E0B", current: false },
+                      { lac: "Gosainganj LAC", doses: 8, color: "#EF4444", current: false },
+                      { lac: "Itaunja LAC", doses: 54, color: "#10B981", current: false },
+                      { lac: "Mall LAC", doses: 22, color: "#F59E0B", current: false },
                     ].map((item, idx) => (
                       <div
                         key={idx}
@@ -301,7 +301,7 @@ export function FieldTechnicianDashboard() {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="font-semibold mb-1" style={{ color: '#003366' }}>
-                        Medicine Inventory — Salipur Block
+                        Medicine Inventory — Bakshi Ka Talab Block
                       </h3>
                       <p className="text-xs" style={{ color: '#6B7280' }}>
                         Top 3 critical medicines shown
@@ -314,14 +314,14 @@ export function FieldTechnicianDashboard() {
 
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     {[
-                      { lac: "Salipur LAC", status: "All adequate", color: "#10B981", current: true },
-                      { lac: "Kendupalli LAC", status: "2 medicines low", color: "#F59E0B", current: false },
-                      { lac: "Barapal LAC", status: "Ivermectin critical", color: "#EF4444", current: false },
-                      { lac: "Tigiria LAC", status: "All adequate", color: "#10B981", current: false },
-                      { lac: "Nandpur LAC", status: "Oxytocin critical", color: "#EF4444", current: false },
-                      { lac: "Gobindpur LAC", status: "1 medicine low", color: "#F59E0B", current: false },
-                      { lac: "Malipada LAC", status: "All adequate", color: "#10B981", current: false },
-                      { lac: "Bentapur LAC", status: "2 medicines low", color: "#F59E0B", current: false },
+                      { lac: "Bakshi Ka Talab LAC", status: "All adequate", color: "#10B981", current: true },
+                      { lac: "Chinhat LAC", status: "2 medicines low", color: "#F59E0B", current: false },
+                      { lac: "Kakori LAC", status: "Ivermectin critical", color: "#EF4444", current: false },
+                      { lac: "Sarojini Nagar LAC", status: "All adequate", color: "#10B981", current: false },
+                      { lac: "Mohanlalganj LAC", status: "Oxytocin critical", color: "#EF4444", current: false },
+                      { lac: "Gosainganj LAC", status: "1 medicine low", color: "#F59E0B", current: false },
+                      { lac: "Itaunja LAC", status: "All adequate", color: "#10B981", current: false },
+                      { lac: "Mall LAC", status: "2 medicines low", color: "#F59E0B", current: false },
                     ].map((item, idx) => (
                       <div
                         key={idx}
@@ -345,19 +345,19 @@ export function FieldTechnicianDashboard() {
                     <div className="flex items-center justify-between p-2 rounded" style={{ backgroundColor: '#FEE2E2' }}>
                       <span className="text-xs" style={{ color: '#374151' }}>Ivermectin</span>
                       <span className="text-xs font-semibold" style={{ color: '#EF4444' }}>
-                        🔴 8 units (Barapal LAC)
+                        🔴 8 units (Kakori LAC)
                       </span>
                     </div>
                     <div className="flex items-center justify-between p-2 rounded" style={{ backgroundColor: '#FEE2E2' }}>
                       <span className="text-xs" style={{ color: '#374151' }}>Oxytocin</span>
                       <span className="text-xs font-semibold" style={{ color: '#EF4444' }}>
-                        🔴 5 units (Nandpur LAC)
+                        🔴 5 units (Mohanlalganj LAC)
                       </span>
                     </div>
                     <div className="flex items-center justify-between p-2 rounded" style={{ backgroundColor: '#FEF3C7' }}>
                       <span className="text-xs" style={{ color: '#374151' }}>Amoxicillin</span>
                       <span className="text-xs font-semibold" style={{ color: '#F59E0B' }}>
-                        🟡 18 units (Kendupalli)
+                        🟡 18 units (Chinhat)
                       </span>
                     </div>
                   </div>
@@ -372,7 +372,7 @@ export function FieldTechnicianDashboard() {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="font-semibold mb-1" style={{ color: '#003366' }}>
-                        Vaccine Inventory — Salipur Block
+                        Vaccine Inventory — Bakshi Ka Talab Block
                       </h3>
                       <p className="text-xs" style={{ color: '#6B7280' }}>
                         By LAC | Expiry alerts shown
@@ -385,14 +385,14 @@ export function FieldTechnicianDashboard() {
 
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     {[
-                      { lac: "Salipur LAC", status: "FMD low", alert: true, color: "#F59E0B", current: true },
-                      { lac: "Kendupalli LAC", status: "All adequate", alert: false, color: "#10B981", current: false },
-                      { lac: "Barapal LAC", status: "HS critical", alert: false, color: "#EF4444", current: false },
-                      { lac: "Tigiria LAC", status: "All adequate", alert: false, color: "#10B981", current: false },
-                      { lac: "Nandpur LAC", status: "PPR low", alert: false, color: "#F59E0B", current: false },
-                      { lac: "Gobindpur LAC", status: "All adequate", alert: false, color: "#10B981", current: false },
-                      { lac: "Malipada LAC", status: "FMD low", alert: false, color: "#F59E0B", current: false },
-                      { lac: "Bentapur LAC", status: "Ranikhet critical", alert: false, color: "#EF4444", current: false },
+                      { lac: "Bakshi Ka Talab LAC", status: "FMD low", alert: true, color: "#F59E0B", current: true },
+                      { lac: "Chinhat LAC", status: "All adequate", alert: false, color: "#10B981", current: false },
+                      { lac: "Kakori LAC", status: "HS critical", alert: false, color: "#EF4444", current: false },
+                      { lac: "Sarojini Nagar LAC", status: "All adequate", alert: false, color: "#10B981", current: false },
+                      { lac: "Mohanlalganj LAC", status: "PPR low", alert: false, color: "#F59E0B", current: false },
+                      { lac: "Gosainganj LAC", status: "All adequate", alert: false, color: "#10B981", current: false },
+                      { lac: "Itaunja LAC", status: "FMD low", alert: false, color: "#F59E0B", current: false },
+                      { lac: "Mall LAC", status: "Ranikhet critical", alert: false, color: "#EF4444", current: false },
                     ].map((item, idx) => (
                       <div
                         key={idx}
@@ -418,12 +418,12 @@ export function FieldTechnicianDashboard() {
                   <div className="space-y-2 mb-3">
                     <div className="p-2 rounded" style={{ backgroundColor: '#FEF3C7' }}>
                       <p className="text-xs" style={{ color: '#92400E' }}>
-                        ⚠ FMD Batch VB-2025-0441: Expires 28 May (6 days) — Salipur LAC
+                        ⚠ FMD Batch VB-2025-0441: Expires 28 May (6 days) — Bakshi Ka Talab LAC
                       </p>
                     </div>
                     <div className="p-2 rounded" style={{ backgroundColor: '#FEF3C7' }}>
                       <p className="text-xs" style={{ color: '#92400E' }}>
-                        ⚠ HS Batch VB-2025-0442: Expires 02 Jun — Barapal LAC
+                        ⚠ HS Batch VB-2025-0442: Expires 02 Jun — Kakori LAC
                       </p>
                     </div>
                   </div>

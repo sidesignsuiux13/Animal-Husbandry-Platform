@@ -16,9 +16,9 @@ export function RequestVaccine() {
   const [confirmed, setConfirmed] = useState(false);
 
   const myAnimals = [
-    { id: "OD1234", name: "Holstein Friesian", lastVaccine: "FMD - 12 Jan 2025" },
-    { id: "OD5678", name: "Jersey", lastVaccine: "FMD - 12 Jan 2025" },
-    { id: "OD9012", name: "Red Sindhi", lastVaccine: "FMD - 12 Jan 2025" },
+    { id: "IN1234", name: "Holstein Friesian", lastVaccine: "FMD - 12 Jan 2025" },
+    { id: "IN5678", name: "Jersey", lastVaccine: "FMD - 12 Jan 2025" },
+    { id: "IN9012", name: "Red Sindhi", lastVaccine: "FMD - 12 Jan 2025" },
   ];
 
   const vaccineTypes = [
@@ -128,7 +128,7 @@ export function RequestVaccine() {
               <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
                 Request Vaccination Service
               </h1>
-              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Salipur, Cuttack" />
+              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Bakshi Ka Talab, Lucknow" />
             </div>
 
             <Card className="p-8">

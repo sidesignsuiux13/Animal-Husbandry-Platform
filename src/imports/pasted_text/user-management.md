@@ -35,42 +35,42 @@ District/Block/LAC | Status |
 Last Login | Actions
 
 U001 | Dr. Arun Mishra | 
-Directorate Admin | All Odisha | 
+Directorate Admin | All India | 
 🟢 Active | 22 May 09:14 | 
 [Edit] [Deactivate]
 
-U002 | Dr. Pradeep Rath | 
-District Officer | Cuttack | 
+U002 | Dr. Pradeep Sharma | 
+District Officer | Lucknow | 
 🟢 Active | 22 May 08:30 | 
 [Edit] [Deactivate]
 
-U003 | Dr. Sarita Mohanty | 
-Block Officer | Salipur, Cuttack | 
+U003 | Dr. Sarita Singh | 
+Block Officer | Bakshi Ka Talab, Lucknow | 
 🟢 Active | 22 May 07:45 | 
 [Edit] [Deactivate]
 
 U004 | Rajan Kumar | 
-Field Technician | Salipur LAC | 
+Field Technician | Bakshi Ka Talab LAC | 
 🟢 Active | 22 May 09:00 | 
 [Edit] [Deactivate]
 
-U005 | Ramesh Pradhan | 
-Farmer | Salipur, Cuttack | 
+U005 | Ramesh Yadav | 
+Farmer | Bakshi Ka Talab, Lucknow | 
 🟢 Active | 20 May 14:22 | 
 [Edit] [Deactivate]
 
 U006 | Deepak Singh | 
-Field Technician | Kendupalli LAC | 
+Field Technician | Chinhat LAC | 
 🟢 Active | 21 May 11:00 | 
 [Edit] [Deactivate]
 
 U007 | Dr. Amit Das | 
-Block Officer | Banki, Cuttack | 
+Block Officer | Malihabad, Lucknow | 
 🟡 Inactive | 15 May 09:30 | 
 [Edit] [Activate]
 
 U008 | Suresh Pal | 
-Field Technician | Barapal LAC | 
+Field Technician | Kakori LAC | 
 🔴 Suspended | 10 May 16:00 | 
 [Edit] [Reinstate]
 
@@ -106,16 +106,16 @@ Based on role selected,
 show relevant location fields:
 
 If District Officer:
-District: [Cuttack ▼]
+District: [Lucknow ▼]
 
 If Block Officer:
-District: [Cuttack ▼]
-Block: [Salipur ▼]
+District: [Lucknow ▼]
+Block: [Bakshi Ka Talab ▼]
 
 If Field Technician:
-District: [Cuttack ▼]
-Block: [Salipur ▼]
-LAC: [Salipur LAC ▼]
+District: [Lucknow ▼]
+Block: [Bakshi Ka Talab ▼]
+LAC: [Bakshi Ka Talab LAC ▼]
 
 If Farmer:
 District: [dropdown]
@@ -123,12 +123,12 @@ Block: [dropdown]
 Village: [text]
 
 Designation: [text input]
-Department: F&ARD (auto-filled)
+Department: DAHD (auto-filled)
 
 Account Settings section:
 Username: [auto-generated from name]
 Temporary Password: [auto-generated]
-  Show: "Temp@2025#ARD"
+  Show: "Temp@2025#GOI"
   [Copy Password] icon button
 
 Send credentials via:
@@ -204,7 +204,7 @@ Block | AIT | Farmer
 
 Log Farmer Request | ✗ | ✗ | ✗ | ✓ | ✓
 Approve Requests | ✓ | ✓ | ✓ | ✗ | ✗
-View All Districts | ✓ | ✗ | ✗ | ✗ | ✗
+View All States | ✓ | ✗ | ✗ | ✗ | ✗
 Allocate Stock | ✓ | ✓ | ✓ | ✗ | ✗
 View Analytics | ✓ | ✓ | ✓ | ✗ | ✗
 User Management | ✓ | ✗ | ✗ | ✗ | ✗
@@ -240,15 +240,15 @@ Successful login | 192.168.1.1
 Approved | Service Requests | 
 SR-2025-1040 approved | —
 
-22 May 08:30 | Dr. Pradeep Rath | 
+22 May 08:30 | Dr. Pradeep Sharma | 
 Login | System | Successful | —
 
-22 May 08:45 | Dr. Pradeep Rath | 
+22 May 08:45 | Dr. Pradeep Sharma | 
 Approved | Medicine | 
 MR-2025-0891 forwarded to 
 Directorate | —
 
-22 May 07:45 | Dr. Sarita Mohanty |
+22 May 07:45 | Dr. Sarita Singh |
 Login | System | Successful | —
 
 22 May 08:00 | Rajan Kumar | 

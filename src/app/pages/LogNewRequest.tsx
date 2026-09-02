@@ -59,7 +59,7 @@ export function LogNewRequest() {
               <p className="text-sm mb-4" style={{ color: "#6B7280" }}>
                 Select the type of service the farmer needs
               </p>
-              <ScopeBadge scope="lac" scopeLabel="Salipur LAC" subLabel="Cuttack District" />
+              <ScopeBadge scope="lac" scopeLabel="Bakshi Ka Talab LAC" subLabel="Lucknow District" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

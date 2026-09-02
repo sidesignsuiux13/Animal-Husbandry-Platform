@@ -25,7 +25,7 @@ export function FieldTechnicianRequests() {
               </h1>
               <ScopeBadge
                 scope="lac"
-                scopeLabel="Salipur LAC"
+                scopeLabel="Bakshi Ka Talab LAC"
                 subLabel="8 Villages"
               />
             </div>
@@ -139,11 +139,11 @@ export function FieldTechnicianRequests() {
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Farmer</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Manoj Nayak | OD3456</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Manoj Kumar | IN3456</div>
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Location</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Nilagiri Village, Salipur</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Indira Nagar Village, Bakshi Ka Talab</div>
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Approved by</div>
@@ -154,7 +154,7 @@ export function FieldTechnicianRequests() {
                 <div className="p-3 rounded-lg mb-4" style={{ backgroundColor: "#EFF6FF" }}>
                   <div className="text-sm font-semibold mb-1" style={{ color: "#1E40AF" }}>Action Required:</div>
                   <div className="text-sm" style={{ color: "#1E40AF" }}>
-                    Collect blood sample, submit to DDL Cuttack
+                    Collect blood sample, submit to DDL Lucknow
                   </div>
                   <div className="text-xs mt-1" style={{ color: "#6B7280" }}>
                     Approved: 22 May 08:30 AM
@@ -199,7 +199,7 @@ export function FieldTechnicianRequests() {
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Farmer</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Sunita Behera | OD2345</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Sunita Devi | IN2345</div>
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Location</div>
@@ -243,7 +243,7 @@ export function FieldTechnicianRequests() {
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Farmer</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Ramesh Pradhan | OD1234</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Ramesh Yadav | IN1234</div>
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Preferred Slot</div>
@@ -251,7 +251,7 @@ export function FieldTechnicianRequests() {
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Location</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Salipur Village</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Bakshi Ka Talab Village</div>
                   </div>
                 </div>
 
@@ -281,7 +281,7 @@ export function FieldTechnicianRequests() {
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Farmer</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Priya Sahoo</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Priya Verma</div>
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Data Entered</div>
@@ -346,7 +346,7 @@ export function FieldTechnicianRequests() {
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Farmer</div>
-                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Bikash Jena</div>
+                    <div className="font-semibold mt-1" style={{ color: "#003366" }}>Vikas Kumar</div>
                   </div>
                   <div>
                     <div className="text-sm" style={{ color: "#6B7280" }}>Completed</div>

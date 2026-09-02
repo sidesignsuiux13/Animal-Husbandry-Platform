@@ -17,9 +17,9 @@ export function OnCallAI() {
       ref: "AI-2025-0847",
       status: "completed",
       statusText: "Completed",
-      farmer: "Ramesh Pradhan",
-      animal: "Holstein OD1234",
-      location: "Salipur Village",
+      farmer: "Ramesh Yadav",
+      animal: "Holstein IN1234",
+      location: "Bakshi Ka Talab Village",
       slot: "Morning",
       semen: "SC-2025-0441",
       otp: true,
@@ -30,8 +30,8 @@ export function OnCallAI() {
       ref: "AI-2025-0848",
       status: "en-route",
       statusText: "En Route",
-      farmer: "Sunita Behera",
-      animal: "Sahiwal OD2345",
+      farmer: "Sunita Devi",
+      animal: "Sahiwal IN2345",
       location: "Brahmagiri Village",
       slot: "Afternoon",
       semen: "Normal Cattle",
@@ -41,7 +41,7 @@ export function OnCallAI() {
       ref: "AI-2025-0851",
       status: "assigned",
       statusText: "Assigned",
-      farmer: "Bikash Jena",
+      farmer: "Vikas Kumar",
       location: "Dharmasala Village",
       slot: "Evening",
     },
@@ -139,7 +139,7 @@ export function OnCallAI() {
                       <div className="grid grid-cols-2 gap-4">
                         <div>
                           <p className="text-sm text-gray-600">Animal</p>
-                          <p className="font-semibold">Holstein Friesian | OD1234</p>
+                          <p className="font-semibold">Holstein Friesian | IN1234</p>
                         </div>
                         <div>
                           <p className="text-sm text-gray-600">Breed</p>
@@ -155,7 +155,7 @@ export function OnCallAI() {
                         </div>
                         <div>
                           <p className="text-sm text-gray-600">Location</p>
-                          <p className="font-semibold">Salipur Village, Cuttack</p>
+                          <p className="font-semibold">Bakshi Ka Talab Village, Lucknow</p>
                         </div>
                         <div>
                           <p className="text-sm text-gray-600">Estimated Arrival</p>

@@ -28,7 +28,7 @@ export function UserManagement() {
     village: "",
     designation: "",
     username: "",
-    tempPassword: "Temp@2025#ARD",
+    tempPassword: "Temp@2025#GOI",
     sendSMS: true,
     sendEmail: true,
     webPortal: true,
@@ -42,25 +42,25 @@ export function UserManagement() {
       id: "U001",
       name: "Dr. Arun Mishra",
       role: "Directorate Admin",
-      location: "All Odisha",
+      location: "All India",
       status: "Active",
       statusColor: "#10B981",
       lastLogin: "22 May 09:14",
     },
     {
       id: "U002",
-      name: "Dr. Pradeep Rath",
+      name: "Dr. Pradeep Sharma",
       role: "District Officer",
-      location: "Cuttack",
+      location: "Lucknow",
       status: "Active",
       statusColor: "#10B981",
       lastLogin: "22 May 08:30",
     },
     {
       id: "U003",
-      name: "Dr. Sarita Mohanty",
+      name: "Dr. Sarita Singh",
       role: "Block Officer",
-      location: "Salipur, Cuttack",
+      location: "Bakshi Ka Talab, Lucknow",
       status: "Active",
       statusColor: "#10B981",
       lastLogin: "22 May 07:45",
@@ -69,16 +69,16 @@ export function UserManagement() {
       id: "U004",
       name: "Rajan Kumar",
       role: "Field Technician",
-      location: "Salipur LAC",
+      location: "Bakshi Ka Talab LAC",
       status: "Active",
       statusColor: "#10B981",
       lastLogin: "22 May 09:00",
     },
     {
       id: "U005",
-      name: "Ramesh Pradhan",
+      name: "Ramesh Yadav",
       role: "Farmer",
-      location: "Salipur, Cuttack",
+      location: "Bakshi Ka Talab, Lucknow",
       status: "Active",
       statusColor: "#10B981",
       lastLogin: "20 May 14:22",
@@ -87,7 +87,7 @@ export function UserManagement() {
       id: "U006",
       name: "Deepak Singh",
       role: "Field Technician",
-      location: "Kendupalli LAC",
+      location: "Chinhat LAC",
       status: "Active",
       statusColor: "#10B981",
       lastLogin: "21 May 11:00",
@@ -96,7 +96,7 @@ export function UserManagement() {
       id: "U007",
       name: "Dr. Amit Das",
       role: "Block Officer",
-      location: "Banki, Cuttack",
+      location: "Malihabad, Lucknow",
       status: "Inactive",
       statusColor: "#F59E0B",
       lastLogin: "15 May 09:30",
@@ -105,7 +105,7 @@ export function UserManagement() {
       id: "U008",
       name: "Suresh Pal",
       role: "Field Technician",
-      location: "Barapal LAC",
+      location: "Kakori LAC",
       status: "Suspended",
       statusColor: "#EF4444",
       lastLogin: "10 May 16:00",
@@ -115,7 +115,7 @@ export function UserManagement() {
   const permissions = [
     { feature: "Log Farmer Request", directorate: false, district: false, block: false, ait: true, farmer: true },
     { feature: "Approve Requests", directorate: true, district: true, block: true, ait: false, farmer: false },
-    { feature: "View All Districts", directorate: true, district: false, block: false, ait: false, farmer: false },
+    { feature: "View All States", directorate: true, district: false, block: false, ait: false, farmer: false },
     { feature: "Allocate Stock", directorate: true, district: true, block: true, ait: false, farmer: false },
     { feature: "View Analytics", directorate: true, district: true, block: true, ait: false, farmer: false },
     { feature: "User Management", directorate: true, district: false, block: false, ait: false, farmer: false },
@@ -142,7 +142,7 @@ export function UserManagement() {
     },
     {
       timestamp: "22 May 08:30",
-      user: "Dr. Pradeep Rath",
+      user: "Dr. Pradeep Sharma",
       action: "Login",
       module: "System",
       details: "Successful",
@@ -150,7 +150,7 @@ export function UserManagement() {
     },
     {
       timestamp: "22 May 08:45",
-      user: "Dr. Pradeep Rath",
+      user: "Dr. Pradeep Sharma",
       action: "Approved",
       module: "Medicine",
       details: "MR-2025-0891 forwarded to Directorate",
@@ -158,7 +158,7 @@ export function UserManagement() {
     },
     {
       timestamp: "22 May 07:45",
-      user: "Dr. Sarita Mohanty",
+      user: "Dr. Sarita Singh",
       action: "Login",
       module: "System",
       details: "Successful",
@@ -242,8 +242,8 @@ export function UserManagement() {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="all-districts">District: All</SelectItem>
-                          <SelectItem value="cuttack">Cuttack</SelectItem>
+                          <SelectItem value="all-districts">State: All</SelectItem>
+                          <SelectItem value="lucknow">Lucknow</SelectItem>
                         </SelectContent>
                       </Select>
 
@@ -469,7 +469,7 @@ export function UserManagement() {
                               <SelectValue placeholder="Select district" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="cuttack">Cuttack</SelectItem>
+                              <SelectItem value="lucknow">Lucknow</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -485,7 +485,7 @@ export function UserManagement() {
                               <SelectValue placeholder="Select block" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="salipur">Salipur</SelectItem>
+                              <SelectItem value="bakshi-ka-talab">Bakshi Ka Talab</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -501,7 +501,7 @@ export function UserManagement() {
                               <SelectValue placeholder="Select LAC" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="salipur-lac">Salipur LAC</SelectItem>
+                              <SelectItem value="bakshi-ka-talab-lac">Bakshi Ka Talab LAC</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -526,7 +526,7 @@ export function UserManagement() {
                         <label className="block text-sm font-medium mb-2" style={{ color: "#374151" }}>
                           Department
                         </label>
-                        <Input value="F&ARD" disabled />
+                        <Input value="DAHD" disabled />
                       </div>
                     </div>
                   </div>
@@ -547,7 +547,7 @@ export function UserManagement() {
                           Temporary Password
                         </label>
                         <div className="flex gap-2">
-                          <Input value="Temp@2025#ARD" disabled />
+                          <Input value="Temp@2025#GOI" disabled />
                           <Button variant="outline" size="sm">
                             <Copy className="w-4 h-4" />
                           </Button>

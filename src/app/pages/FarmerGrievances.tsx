@@ -40,11 +40,11 @@ export function FarmerGrievances() {
       raised: "22 May 2025",
       status: "Open",
       statusColor: "#EF4444",
-      assignedTo: "BVO Dr. Sarita Mohanty",
+      assignedTo: "BVO Dr. Sarita Singh",
       sla: "Response due by 24 May",
       activities: [
         { time: "22 May 10:15 AM", text: "You raised this ticket" },
-        { time: "22 May 10:16 AM", text: "Ticket assigned to BVO Dr. Sarita Mohanty" },
+        { time: "22 May 10:16 AM", text: "Ticket assigned to BVO Dr. Sarita Singh" },
         { time: "22 May 11:00 AM", text: "BVO acknowledged your complaint", note: "We are looking into this" },
         { time: "Waiting", text: "⏳ Waiting for resolution..." },
       ],
@@ -56,7 +56,7 @@ export function FarmerGrievances() {
       raised: "15 May 2025",
       status: "Resolved",
       statusColor: "#10B981",
-      resolvedBy: "BVO Dr. Sarita Mohanty",
+      resolvedBy: "BVO Dr. Sarita Singh",
       resolution: "17 May 2025",
       activities: [
         { time: "15 May", text: "You raised ticket" },
@@ -78,7 +78,7 @@ export function FarmerGrievances() {
         { time: "08 May", text: "You raised ticket" },
         { time: "08 May", text: "Assigned to BVO" },
         { time: "10 May", text: "No response in 48hrs — Auto-escalated to District Officer" },
-        { time: "10 May", text: "District Officer Dr. Pradeep Rath assigned" },
+        { time: "10 May", text: "District Officer Dr. Pradeep Sharma assigned" },
         { time: "11 May", text: "Resolved: Report sent" },
       ],
     },
@@ -124,7 +124,7 @@ export function FarmerGrievances() {
                     Your issue has been sent to
                   </p>
                   <p className="text-sm mb-2 font-semibold" style={{ color: "#003366" }}>
-                    Block Officer Dr. Sarita Mohanty
+                    Block Officer Dr. Sarita Singh
                   </p>
                   <p className="text-sm mb-2" style={{ color: "#6B7280" }}>
                     Expected response: 48 hours
@@ -161,7 +161,7 @@ export function FarmerGrievances() {
               <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
                 My Grievances & Support
               </h1>
-              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Salipur, Cuttack" />
+              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Bakshi Ka Talab, Lucknow" />
             </div>
 
             <Tabs defaultValue="raise">
@@ -467,7 +467,7 @@ export function FarmerGrievances() {
                 <div className="max-w-2xl mx-auto space-y-6">
                   <Card className="p-8 text-center" style={{ backgroundColor: "#003366", color: "white" }}>
                     <Phone className="w-16 h-16 mx-auto mb-4" />
-                    <h3 className="text-2xl font-bold mb-2">Krushi Samrudhi Helpline</h3>
+                    <h3 className="text-2xl font-bold mb-2">Animal Husbandry Helpline</h3>
                     <p className="text-4xl font-bold mb-4">1800-XXX-XXXX</p>
                     <p className="text-lg mb-6">(Toll Free)</p>
                     <div className="mb-6">
@@ -484,10 +484,10 @@ export function FarmerGrievances() {
                     <div className="mt-6 p-4 rounded" style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}>
                       <p className="text-sm mb-2">Your details will be shared with the helpline agent:</p>
                       <p className="text-sm">
-                        <strong>Name:</strong> Ramesh Pradhan
+                        <strong>Name:</strong> Ramesh Yadav
                       </p>
                       <p className="text-sm">
-                        <strong>ID:</strong> F001 | <strong>District:</strong> Cuttack
+                        <strong>ID:</strong> F001 | <strong>District:</strong> Lucknow
                       </p>
                     </div>
                   </Card>
@@ -510,7 +510,7 @@ export function FarmerGrievances() {
                       Language support:
                     </h4>
                     <p className="text-sm" style={{ color: "#374151" }}>
-                      Available in: <strong>Odia | Hindi | English</strong>
+                      Available in: <strong>Hindi | Hindi | English</strong>
                     </p>
                   </Card>
                 </div>

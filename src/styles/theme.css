@@ -3,17 +3,17 @@
 :root {
   --font-size: 16px;
   
-  /* ARD Digital Platform Colors */
-  --ard-primary: #003366;
-  --ard-accent: #FF6600;
-  --ard-success: #22C55E;
-  --ard-warning: #F59E0B;
-  --ard-danger: #EF4444;
-  --ard-bg: #F5F5F5;
-  --ard-card: #FFFFFF;
-  --ard-text-primary: #1A1A1A;
-  --ard-text-secondary: #6B7280;
-  --ard-border: #E5E7EB;
+  /* Animal Husbandry Digital Platform Colors */
+  --ahp-primary: #003366;
+  --ahp-accent: #FF6600;
+  --ahp-success: #22C55E;
+  --ahp-warning: #F59E0B;
+  --ahp-danger: #EF4444;
+  --ahp-bg: #F5F5F5;
+  --ahp-card: #FFFFFF;
+  --ahp-text-primary: #1A1A1A;
+  --ahp-text-secondary: #6B7280;
+  --ahp-border: #E5E7EB;
   
   --background: #F5F5F5;
   --foreground: #1A1A1A;

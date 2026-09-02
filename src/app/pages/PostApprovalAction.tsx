@@ -125,19 +125,19 @@ export function PostApprovalAction() {
                 <div>
                   <div className="text-sm" style={{ color: "#6B7280" }}>Farmer</div>
                   <div className="font-semibold mt-1" style={{ color: "#003366" }}>
-                    Manoj Nayak
+                    Manoj Kumar
                   </div>
                 </div>
                 <div>
                   <div className="text-sm" style={{ color: "#6B7280" }}>Livestock</div>
                   <div className="font-semibold mt-1" style={{ color: "#003366" }}>
-                    OD3456 | Murrah Buffalo
+                    IN3456 | Murrah Buffalo
                   </div>
                 </div>
                 <div>
                   <div className="text-sm" style={{ color: "#6B7280" }}>Location</div>
                   <div className="font-semibold mt-1" style={{ color: "#003366" }}>
-                    Nilagiri Village, Salipur
+                    Indira Nagar Village, Bakshi Ka Talab
                   </div>
                 </div>
               </div>
@@ -227,7 +227,7 @@ export function PostApprovalAction() {
                       Instructions from District Officer:
                     </div>
                     <div className="text-sm" style={{ color: "#1E40AF" }}>
-                      Collect blood sample from affected animal. Submit to DDL Cuttack marked URGENT.
+                      Collect blood sample from affected animal. Submit to DDL Lucknow marked URGENT.
                       Isolate animal from herd immediately. Report back within 24hrs.
                     </div>
                   </div>
@@ -298,13 +298,13 @@ export function PostApprovalAction() {
                   <Label className="text-sm font-medium mb-2 block" style={{ color: "#374151" }}>
                     Submitted to lab
                   </Label>
-                  <Select defaultValue="ddl-cuttack">
+                  <Select defaultValue="ddl-lucknow">
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="ddl-cuttack">DDL Cuttack</SelectItem>
-                      <SelectItem value="ddl-bhubaneswar">DDL Bhubaneswar</SelectItem>
+                      <SelectItem value="ddl-lucknow">DDL Lucknow</SelectItem>
+                      <SelectItem value="ddl-delhi">DDL Delhi</SelectItem>
                       <SelectItem value="rdl-berhampur">RDL Berhampur</SelectItem>
                     </SelectContent>
                   </Select>

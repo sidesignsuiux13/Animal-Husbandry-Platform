@@ -21,9 +21,9 @@ export function RequestMedicine() {
   const [submitted, setSubmitted] = useState(false);
 
   const myAnimals = [
-    { id: "OD1234", name: "Holstein Friesian" },
-    { id: "OD5678", name: "Jersey" },
-    { id: "OD9012", name: "Red Sindhi" },
+    { id: "IN1234", name: "Holstein Friesian" },
+    { id: "IN5678", name: "Jersey" },
+    { id: "IN9012", name: "Red Sindhi" },
   ];
 
   const handleSubmit = () => {
@@ -41,7 +41,7 @@ export function RequestMedicine() {
               <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
                 Request Medicine
               </h1>
-              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Salipur, Cuttack" />
+              <ScopeBadge scope="lac" scopeLabel="My Farm" subLabel="Bakshi Ka Talab, Lucknow" />
             </div>
 
             {!submitted ? (

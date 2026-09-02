@@ -39,7 +39,7 @@ import {
 export function DiseaseSurveillance() {
   const [activeTab, setActiveTab] = useState("lab-queue");
   const [selectedSampleType, setSelectedSampleType] = useState("blood");
-  const [selectedLab, setSelectedLab] = useState("ddl-cuttack");
+  const [selectedLab, setSelectedLab] = useState("ddl-lucknow");
   const [symptoms, setSymptoms] = useState({
     fever: true,
     lethargy: true,
@@ -56,37 +56,37 @@ export function DiseaseSurveillance() {
   const labQueueData = [
     {
       regNo: "DDL-2025-0241",
-      farmer: "Ramesh Pradhan",
-      district: "Cuttack",
+      farmer: "Ramesh Yadav",
+      district: "Lucknow",
       sample: "Blood",
-      lab: "DDL Cuttack",
+      lab: "DDL Lucknow",
       submitted: "19 May",
       status: "testing",
       statusText: "Under Testing",
     },
     {
       regNo: "DDL-2025-0242",
-      farmer: "Sunita Behera",
-      district: "Puri",
+      farmer: "Sunita Devi",
+      district: "Pune",
       sample: "Serum",
-      lab: "DDL Bhubaneswar",
+      lab: "DDL Delhi",
       submitted: "20 May",
       status: "received",
       statusText: "Received",
     },
     {
       regNo: "DDL-2025-0243",
-      farmer: "Manoj Nayak",
-      district: "Balasore",
+      farmer: "Manoj Kumar",
+      district: "Bhopal",
       sample: "Swab",
-      lab: "DDL Sambalpur",
+      lab: "DDL Patna",
       submitted: "20 May",
       status: "registered",
       statusText: "Registered",
     },
     {
       regNo: "DDL-2025-0244",
-      farmer: "Bikash Jena",
+      farmer: "Vikas Kumar",
       district: "Jajpur",
       sample: "Blood",
       lab: "ADRI Phulnakhara",
@@ -96,10 +96,10 @@ export function DiseaseSurveillance() {
     },
     {
       regNo: "DDL-2025-0245",
-      farmer: "Priya Sahoo",
-      district: "Khordha",
+      farmer: "Priya Verma",
+      district: "Gurugram",
       sample: "Milk",
-      lab: "DDL Bhubaneswar",
+      lab: "DDL Delhi",
       submitted: "21 May",
       status: "registered",
       statusText: "Registered",
@@ -126,14 +126,14 @@ export function DiseaseSurveillance() {
   const outbreakHistory = [
     {
       disease: "FMD",
-      district: "Cuttack",
+      district: "Lucknow",
       cases: 24,
       dateRange: "15-22 May 2025",
       status: "active",
     },
     {
       disease: "HS",
-      district: "Koraput",
+      district: "Jaipur",
       cases: 18,
       dateRange: "01-15 Apr 2025",
       status: "contained",
@@ -193,7 +193,7 @@ export function DiseaseSurveillance() {
                 <span className="font-semibold">OUTBREAK ALERT: Foot and Mouth Disease</span>
                 <span className="mx-2">—</span>
                 <span>
-                  7 cases in Cuttack district in last 7 days. Immediate containment required.
+                  7 cases in Lucknow district in last 7 days. Immediate containment required.
                   Contact ADRI Phulnakhara.
                 </span>
               </div>
@@ -221,38 +221,38 @@ export function DiseaseSurveillance() {
 
                         <div className="space-y-2">
                           <label className="text-sm">Farmer Name</label>
-                          <Input placeholder="Ramesh Pradhan" defaultValue="Ramesh Pradhan" />
+                          <Input placeholder="Ramesh Yadav" defaultValue="Ramesh Yadav" />
                         </div>
 
                         <div className="grid grid-cols-3 gap-4">
                           <div className="space-y-2">
                             <label className="text-sm">District</label>
-                            <Select defaultValue="cuttack">
+                            <Select defaultValue="lucknow">
                               <SelectTrigger>
                                 <SelectValue />
                               </SelectTrigger>
                               <SelectContent>
-                                <SelectItem value="cuttack">Cuttack</SelectItem>
-                                <SelectItem value="puri">Puri</SelectItem>
-                                <SelectItem value="balasore">Balasore</SelectItem>
+                                <SelectItem value="lucknow">Lucknow</SelectItem>
+                                <SelectItem value="pune">Pune</SelectItem>
+                                <SelectItem value="bhopal">Bhopal</SelectItem>
                               </SelectContent>
                             </Select>
                           </div>
                           <div className="space-y-2">
                             <label className="text-sm">Block</label>
-                            <Select defaultValue="salipur">
+                            <Select defaultValue="bakshi-ka-talab">
                               <SelectTrigger>
                                 <SelectValue />
                               </SelectTrigger>
                               <SelectContent>
-                                <SelectItem value="salipur">Salipur</SelectItem>
-                                <SelectItem value="banki">Banki</SelectItem>
+                                <SelectItem value="bakshi-ka-talab">Bakshi Ka Talab</SelectItem>
+                                <SelectItem value="malihabad">Malihabad</SelectItem>
                               </SelectContent>
                             </Select>
                           </div>
                           <div className="space-y-2">
                             <label className="text-sm">Village</label>
-                            <Input placeholder="Kendupalli" defaultValue="Kendupalli" />
+                            <Input placeholder="Chinhat" defaultValue="Chinhat" />
                           </div>
                         </div>
 
@@ -269,7 +269,7 @@ export function DiseaseSurveillance() {
 
                         <div className="space-y-2">
                           <label className="text-sm">Livestock ID (optional)</label>
-                          <Input placeholder="OD1234" defaultValue="OD1234" />
+                          <Input placeholder="IN1234" defaultValue="IN1234" />
                         </div>
 
                         <Badge className="bg-green-100 text-green-800 border-green-200">
@@ -344,10 +344,10 @@ export function DiseaseSurveillance() {
                           <label className="text-sm">Submitting Lab</label>
                           <RadioGroup value={selectedLab} onValueChange={setSelectedLab}>
                             {[
-                              { id: "ddl-cuttack", label: "DDL Cuttack" },
-                              { id: "ddl-bhubaneswar", label: "DDL Bhubaneswar" },
-                              { id: "ddl-sambalpur", label: "DDL Sambalpur" },
-                              { id: "ddl-balasore", label: "DDL Balasore" },
+                              { id: "ddl-lucknow", label: "DDL Lucknow" },
+                              { id: "ddl-delhi", label: "DDL Delhi" },
+                              { id: "ddl-patna", label: "DDL Patna" },
+                              { id: "ddl-bhopal", label: "DDL Bhopal" },
                               { id: "adri-phulnakhara", label: "ADRI Phulnakhara" },
                             ].map((lab) => (
                               <div key={lab.id} className="flex items-center gap-2">
@@ -377,7 +377,7 @@ export function DiseaseSurveillance() {
                               <span className="font-semibold">Registration No:</span> DDL-2025-0247
                             </p>
                             <p>
-                              <span className="font-semibold">Submitted to:</span> DDL Cuttack
+                              <span className="font-semibold">Submitted to:</span> DDL Lucknow
                             </p>
                             <p>
                               <span className="font-semibold">Date:</span> 22 May 2025
@@ -470,10 +470,10 @@ export function DiseaseSurveillance() {
 
                         <div className="border-t pt-4 space-y-2">
                           <p>
-                            <span className="text-gray-600">Patient:</span> Bikash Jena
+                            <span className="text-gray-600">Patient:</span> Vikas Kumar
                           </p>
                           <p>
-                            <span className="text-gray-600">Livestock:</span> OD3456 Murrah Buffalo
+                            <span className="text-gray-600">Livestock:</span> IN3456 Murrah Buffalo
                           </p>
                           <p>
                             <span className="text-gray-600">Lab:</span> ADRI Phulnakhara
@@ -569,14 +569,14 @@ export function DiseaseSurveillance() {
                         <div className="space-y-2">
                           <div className="p-3 bg-gray-50 rounded-lg text-sm cursor-pointer hover:bg-gray-100">
                             <p className="font-medium">DDL-2025-0241</p>
-                            <p className="text-gray-600">19 May | Ramesh Pradhan</p>
+                            <p className="text-gray-600">19 May | Ramesh Yadav</p>
                             <Badge variant="outline" className="mt-1">
                               Pending
                             </Badge>
                           </div>
                           <div className="p-3 bg-green-50 rounded-lg text-sm cursor-pointer hover:bg-green-100">
                             <p className="font-medium">DDL-2025-0244</p>
-                            <p className="text-gray-600">21 May | Bikash Jena</p>
+                            <p className="text-gray-600">21 May | Vikas Kumar</p>
                             <Badge className="mt-1 bg-green-100 text-green-800 border-green-200">
                               ✓ Ready
                             </Badge>
@@ -603,7 +603,7 @@ export function DiseaseSurveillance() {
                           <div className="grid grid-cols-2 gap-4 text-sm">
                             <div>
                               <p className="text-gray-600">Farmer</p>
-                              <p className="font-medium">Bikash Jena</p>
+                              <p className="font-medium">Vikas Kumar</p>
                             </div>
                             <div>
                               <p className="text-gray-600">Mobile</p>
@@ -611,7 +611,7 @@ export function DiseaseSurveillance() {
                             </div>
                             <div>
                               <p className="text-gray-600">Livestock</p>
-                              <p className="font-medium">OD3456 | Murrah Buffalo</p>
+                              <p className="font-medium">IN3456 | Murrah Buffalo</p>
                             </div>
                             <div>
                               <p className="text-gray-600">Age</p>
@@ -712,9 +712,9 @@ export function DiseaseSurveillance() {
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="all">All Districts</SelectItem>
-                            <SelectItem value="cuttack">Cuttack</SelectItem>
-                            <SelectItem value="puri">Puri</SelectItem>
+                            <SelectItem value="all">All States</SelectItem>
+                            <SelectItem value="lucknow">Lucknow</SelectItem>
+                            <SelectItem value="pune">Pune</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -773,18 +773,18 @@ export function DiseaseSurveillance() {
                     <CardContent>
                       <div className="grid grid-cols-6 gap-2">
                         {[
-                          { name: "Cuttack", cases: 24, outbreak: true },
-                          { name: "Puri", cases: 18 },
-                          { name: "Balasore", cases: 15 },
+                          { name: "Lucknow", cases: 24, outbreak: true },
+                          { name: "Pune", cases: 18 },
+                          { name: "Bhopal", cases: 15 },
                           { name: "Jajpur", cases: 12 },
-                          { name: "Khordha", cases: 10 },
+                          { name: "Gurugram", cases: 10 },
                           { name: "Kendrapara", cases: 8 },
                           { name: "Jagatsinghpur", cases: 7 },
                           { name: "Nayagarh", cases: 6 },
                           { name: "Dhenkanal", cases: 5 },
                           { name: "Angul", cases: 4 },
                           { name: "Boudh", cases: 3 },
-                          { name: "Koraput", cases: 3 },
+                          { name: "Jaipur", cases: 3 },
                           { name: "Gajapati", cases: 2 },
                           { name: "Rayagada", cases: 2 },
                           { name: "Kandhamal", cases: 1 },

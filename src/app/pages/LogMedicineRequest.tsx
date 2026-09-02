@@ -71,10 +71,10 @@ export function LogMedicineRequest() {
                   Medicine Record Saved: MR-2025-0891
                 </h2>
                 <p className="text-sm mb-1" style={{ color: "#6B7280" }}>
-                  Submitted to: BVO Dr. Sarita Mohanty
+                  Submitted to: BVO Dr. Sarita Singh
                 </p>
                 <p className="text-sm mb-1" style={{ color: "#6B7280" }}>
-                  Stock updated at Salipur LAC ✓
+                  Stock updated at Bakshi Ka Talab LAC ✓
                 </p>
                 <p className="text-sm mb-6" style={{ color: "#6B7280" }}>
                   SMS sent to farmer ✓
@@ -116,7 +116,7 @@ export function LogMedicineRequest() {
                 <h1 className="text-2xl font-bold" style={{ color: "#003366" }}>
                   Medicine Request
                 </h1>
-                <ScopeBadge scope="lac" scopeLabel="Salipur LAC" subLabel="Cuttack District" />
+                <ScopeBadge scope="lac" scopeLabel="Bakshi Ka Talab LAC" subLabel="Lucknow District" />
               </div>
             </div>
 
@@ -418,7 +418,7 @@ export function LogMedicineRequest() {
 
                   <Card className="p-4" style={{ backgroundColor: "#EFF6FF", borderColor: "#3B82F6" }}>
                     <p className="text-sm mb-2" style={{ color: "#1E40AF" }}>
-                      Medicine record will be saved to the system and submitted to Block Officer (Dr. Sarita Mohanty) for review and approval. Stock at Salipur LAC will be updated automatically.
+                      Medicine record will be saved to the system and submitted to Block Officer (Dr. Sarita Singh) for review and approval. Stock at Bakshi Ka Talab LAC will be updated automatically.
                     </p>
                     <p className="text-xs font-semibold" style={{ color: "#1E40AF" }}>
                       Stock update preview: Oxytetracycline: 34 → 32 units

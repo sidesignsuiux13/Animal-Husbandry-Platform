@@ -14,10 +14,10 @@ import {
   PhoneCall,
   ClipboardList,
   Settings,
+  Landmark,
 } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { useAuth } from "../context/AuthContext";
-import logo from "../../imports/adep-logo_1-1.png";
 
 interface SidebarProps {
   activeRoute?: string;
@@ -69,14 +69,15 @@ export function Sidebar({ activeRoute }: SidebarProps) {
       className="w-64 min-h-screen flex flex-col"
       style={{ backgroundColor: '#003366' }}
     >
-      {/* Logo */}
-      <div className="p-6 flex items-center justify-center">
-        <img
-          src={logo}
-          alt="ARD Logo"
-          className="h-10 w-auto"
-          style={{ filter: 'brightness(0) invert(1)' }}
-        />
+      {/* Brand */}
+      <div className="p-6 flex items-center gap-3">
+        <div className="w-10 h-10 rounded-md flex items-center justify-center bg-white/10">
+          <Landmark className="w-6 h-6 text-white" />
+        </div>
+        <div>
+          <p className="text-white font-semibold leading-tight">Govt. of India</p>
+          <p className="text-blue-100 text-xs leading-tight">Animal Husbandry</p>
+        </div>
       </div>
 
       {/* Navigation */}

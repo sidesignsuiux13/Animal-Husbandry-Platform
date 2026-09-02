@@ -44,7 +44,7 @@ export function TrainingManagement() {
       code: "AD-2025-02",
       name: "Advanced Diagnostics",
       dates: "15 Jun – 18 Jun",
-      venue: "DDL Cuttack",
+      venue: "DDL Lucknow",
       enrolled: 15,
       max: 15,
       percentage: 100,
@@ -57,7 +57,7 @@ export function TrainingManagement() {
     {
       officer: "Dr. Amit Das",
       designation: "BVO",
-      district: "Cuttack",
+      district: "Lucknow",
       programme: "Zoonotic Disease Mgmt",
       applied: "18 May",
       warning: null,
@@ -67,7 +67,7 @@ export function TrainingManagement() {
     {
       officer: "Dr. Kavita Patel",
       designation: "VAS",
-      district: "Puri",
+      district: "Pune",
       programme: "Biosecurity Protocols",
       applied: "19 May",
       warning: "⚠ Completed Aug 2024",
@@ -77,17 +77,17 @@ export function TrainingManagement() {
     {
       officer: "Sujit Kumar",
       designation: "AVAS",
-      district: "Balasore",
+      district: "Bhopal",
       programme: "Advanced Diagnostics",
       applied: "20 May",
-      warning: "⚠ Quota: 2/2 Balasore",
+      warning: "⚠ Quota: 2/2 Bhopal",
       status: "Pending",
       statusColor: "#F59E0B",
     },
     {
       officer: "Dr. Rekha Singh",
       designation: "CDVO",
-      district: "Ganjam",
+      district: "Nashik",
       programme: "Emergency Response",
       applied: "21 May",
       warning: null,
@@ -95,9 +95,9 @@ export function TrainingManagement() {
       statusColor: "#10B981",
     },
     {
-      officer: "Anita Mohanty",
+      officer: "Anita Singh",
       designation: "BVO",
-      district: "Koraput",
+      district: "Jaipur",
       programme: "Animal Nutrition",
       applied: "21 May",
       warning: null,
@@ -107,7 +107,7 @@ export function TrainingManagement() {
     {
       officer: "Priya Nanda",
       designation: "VAS",
-      district: "Puri",
+      district: "Pune",
       programme: "Advanced Diagnostics",
       applied: "18 May",
       warning: null,
@@ -120,7 +120,7 @@ export function TrainingManagement() {
     {
       officer: "Dr. Amit Das",
       designation: "BVO",
-      district: "Cuttack",
+      district: "Lucknow",
       completed: 3,
       lastTraining: "Mar 2025",
       upcoming: "Jun 2025",
@@ -135,7 +135,7 @@ export function TrainingManagement() {
     {
       officer: "Dr. Kavita Patel",
       designation: "VAS",
-      district: "Puri",
+      district: "Pune",
       completed: 4,
       lastTraining: "Aug 2024",
       upcoming: "—",
@@ -145,16 +145,16 @@ export function TrainingManagement() {
     {
       officer: "Sujit Kumar",
       designation: "AVAS",
-      district: "Balasore",
+      district: "Bhopal",
       completed: 1,
       lastTraining: "Jan 2025",
       upcoming: "Jun 2025",
       highlighted: false,
     },
     {
-      officer: "Dr. Sarita Mohanty",
+      officer: "Dr. Sarita Singh",
       designation: "BVO",
-      district: "Cuttack",
+      district: "Lucknow",
       completed: 5,
       lastTraining: "Apr 2025",
       upcoming: "—",
@@ -163,7 +163,7 @@ export function TrainingManagement() {
     {
       officer: "Rajan Kumar",
       designation: "AIT",
-      district: "Cuttack",
+      district: "Lucknow",
       completed: 2,
       lastTraining: "Feb 2025",
       upcoming: "Pending",
@@ -174,12 +174,12 @@ export function TrainingManagement() {
   const [selectedOfficer, setSelectedOfficer] = useState(databaseOfficers[0]);
 
   const districtData = [
-    { district: "Cuttack", applications: 45 },
-    { district: "Puri", applications: 38 },
-    { district: "Ganjam", applications: 34 },
-    { district: "Balasore", applications: 32 },
-    { district: "Koraput", applications: 28 },
-    { district: "Sambalpur", applications: 24 },
+    { district: "Lucknow", applications: 45 },
+    { district: "Pune", applications: 38 },
+    { district: "Nashik", applications: 34 },
+    { district: "Bhopal", applications: 32 },
+    { district: "Jaipur", applications: 28 },
+    { district: "Patna", applications: 24 },
     { district: "Malkangiri", applications: 22 },
     { district: "Gajapati", applications: 18 },
   ];
@@ -513,7 +513,7 @@ export function TrainingManagement() {
                       <label className="block text-sm font-medium mb-1" style={{ color: "#374151" }}>
                         Venue
                       </label>
-                      <Input value="VOTI Bhubaneswar" readOnly />
+                      <Input value="VOTI Delhi" readOnly />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-1" style={{ color: "#374151" }}>
@@ -526,7 +526,7 @@ export function TrainingManagement() {
                         Assigned Officers (3)
                       </label>
                       <div className="space-y-2">
-                        {["Dr. Amit Das - BVO, Cuttack", "Dr. Rekha Singh - CDVO, Ganjam", "Anita Mohanty - BVO, Koraput"].map(
+                        {["Dr. Amit Das - BVO, Lucknow", "Dr. Rekha Singh - CDVO, Nashik", "Anita Singh - BVO, Jaipur"].map(
                           (officer, idx) => (
                             <label key={idx} className="flex items-center gap-2">
                               <input type="checkbox" checked readOnly className="w-4 h-4" />

@@ -26,7 +26,7 @@ export function LogDiseaseRequest() {
   const [suspectedDisease, setSuspectedDisease] = useState("fmd");
   const [urgency, setUrgency] = useState("urgent");
   const [sampleType, setSampleType] = useState("blood");
-  const [submitTo, setSubmitTo] = useState("ddl-cuttack");
+  const [submitTo, setSubmitTo] = useState("ddl-lucknow");
   const [actions, setActions] = useState<string[]>(["isolated", "biosecurity"]);
   const [notes, setNotes] = useState("Multiple cattle showing lameness and oral blisters. Suspected FMD. Animal isolated. Sample collected for confirmation.");
 
@@ -71,13 +71,13 @@ export function LogDiseaseRequest() {
                   Sample Registered: DDL-2025-0247
                 </h2>
                 <p className="text-sm mb-1" style={{ color: "#6B7280" }}>
-                  Submitted to: DDL Cuttack
+                  Submitted to: DDL Lucknow
                 </p>
                 <p className="text-sm mb-1" style={{ color: "#EF4444" }}>
                   Urgency: 🔴 URGENT flagged
                 </p>
                 <p className="text-sm mb-1" style={{ color: "#6B7280" }}>
-                  BVO Dr. Sarita Mohanty notified ✓
+                  BVO Dr. Sarita Singh notified ✓
                 </p>
                 <p className="text-sm mb-6" style={{ color: "#6B7280" }}>
                   SMS sent to farmer ✓
@@ -97,7 +97,7 @@ export function LogDiseaseRequest() {
                     Date: 22 May 2025
                   </p>
                   <p className="text-sm" style={{ color: "#6B7280" }}>
-                    Track at: DDL Cuttack
+                    Track at: DDL Lucknow
                   </p>
                 </Card>
 
@@ -139,7 +139,7 @@ export function LogDiseaseRequest() {
                 <h1 className="text-2xl font-bold" style={{ color: "#003366" }}>
                   Disease & Sample Request
                 </h1>
-                <ScopeBadge scope="lac" scopeLabel="Salipur LAC" subLabel="Cuttack District" />
+                <ScopeBadge scope="lac" scopeLabel="Bakshi Ka Talab LAC" subLabel="Lucknow District" />
               </div>
             </div>
 
@@ -363,9 +363,9 @@ export function LogDiseaseRequest() {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="ddl-cuttack">DDL Cuttack (nearest)</SelectItem>
-                          <SelectItem value="ddl-bhubaneswar">DDL Bhubaneswar</SelectItem>
-                          <SelectItem value="ddl-sambalpur">DDL Sambalpur</SelectItem>
+                          <SelectItem value="ddl-lucknow">DDL Lucknow (nearest)</SelectItem>
+                          <SelectItem value="ddl-delhi">DDL Delhi</SelectItem>
+                          <SelectItem value="ddl-patna">DDL Patna</SelectItem>
                           <SelectItem value="adri-phulnakhara">ADRI Phulnakhara</SelectItem>
                         </SelectContent>
                       </Select>
@@ -408,7 +408,7 @@ export function LogDiseaseRequest() {
                       Take/Upload Photo
                     </Button>
                     <p className="text-xs mt-2" style={{ color: "#6B7280" }}>
-                      1 photo uploaded • Geo-tagged: Salipur Village • Timestamp: 22 May 2025 10:45 AM
+                      1 photo uploaded • Geo-tagged: Bakshi Ka Talab Village • Timestamp: 22 May 2025 10:45 AM
                     </p>
                   </div>
 
@@ -507,7 +507,7 @@ export function LogDiseaseRequest() {
                       <div className="flex justify-between">
                         <span style={{ color: "#6B7280" }}>Submit to:</span>
                         <span className="font-medium" style={{ color: "#003366" }}>
-                          DDL Cuttack
+                          DDL Lucknow
                         </span>
                       </div>
                       <div className="flex justify-between">
@@ -528,7 +528,7 @@ export function LogDiseaseRequest() {
                             ⚠ Urgent submission detected.
                           </p>
                           <p className="text-xs" style={{ color: "#991B1B" }}>
-                            This will be flagged to BVO Dr. Sarita Mohanty and CDVO Dr. Pradeep Rath immediately. If confirmed as FMD, outbreak protocol will be triggered.
+                            This will be flagged to BVO Dr. Sarita Singh and CDVO Dr. Pradeep Sharma immediately. If confirmed as FMD, outbreak protocol will be triggered.
                           </p>
                         </div>
                       </div>
@@ -537,7 +537,7 @@ export function LogDiseaseRequest() {
 
                   <Card className="p-4" style={{ backgroundColor: "#EFF6FF", borderColor: "#3B82F6" }}>
                     <p className="text-sm" style={{ color: "#1E40AF" }}>
-                      Sample registration will be created in Disease Surveillance module. Registration number generated. DDL Cuttack will be notified. Block Officer will be alerted.
+                      Sample registration will be created in Disease Surveillance module. Registration number generated. DDL Lucknow will be notified. Block Officer will be alerted.
                     </p>
                   </Card>
 

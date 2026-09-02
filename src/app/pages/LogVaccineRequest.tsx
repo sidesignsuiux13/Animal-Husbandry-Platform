@@ -109,7 +109,7 @@ export function LogVaccineRequest() {
                 <h1 className="text-2xl font-bold" style={{ color: "#003366" }}>
                   Vaccination Request
                 </h1>
-                <ScopeBadge scope="lac" scopeLabel="Salipur LAC" subLabel="Cuttack District" />
+                <ScopeBadge scope="lac" scopeLabel="Bakshi Ka Talab LAC" subLabel="Lucknow District" />
               </div>
             </div>
 
@@ -294,7 +294,7 @@ export function LogVaccineRequest() {
                       <strong>Current LAC Stock: FMD Vaccine: 45 doses 🟡 Low</strong>
                     </p>
                     <p className="text-xs" style={{ color: "#92400E" }}>
-                      Warning: Stock low at Salipur LAC. Consider raising restocking request.
+                      Warning: Stock low at Bakshi Ka Talab LAC. Consider raising restocking request.
                     </p>
                     <button className="text-xs font-medium mt-2" style={{ color: "#F59E0B" }}>
                       [Raise Restocking Request]
@@ -398,7 +398,7 @@ export function LogVaccineRequest() {
 
                   <Card className="p-4" style={{ backgroundColor: "#EFF6FF", borderColor: "#3B82F6" }}>
                     <p className="text-sm mb-2" style={{ color: "#1E40AF" }}>
-                      Vaccination record will be saved directly to the system. Bharat Pashudhan will be updated. Booster reminder will be sent to farmer on 21 Aug 2025. Stock at Salipur LAC updated.
+                      Vaccination record will be saved directly to the system. Bharat Pashudhan will be updated. Booster reminder will be sent to farmer on 21 Aug 2025. Stock at Bakshi Ka Talab LAC updated.
                     </p>
                     <p className="text-xs font-semibold" style={{ color: "#1E40AF" }}>
                       Stock update preview: FMD Vaccine: 45 → 43 doses

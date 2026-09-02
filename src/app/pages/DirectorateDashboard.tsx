@@ -24,7 +24,7 @@ export function DirectorateDashboard() {
           icon: Package,
           title: "Total Stock Units",
           value: "4,82,350",
-          subtitle: "doses across state",
+          subtitle: "doses across India",
           borderColor: "#003366",
         },
         {
@@ -55,14 +55,14 @@ export function DirectorateDashboard() {
           icon: Package,
           title: "District Stock",
           value: "18,420",
-          subtitle: "Across 12 blocks, Cuttack",
+          subtitle: "Across 12 blocks, Lucknow",
           borderColor: "#003366",
         },
         {
           icon: CheckCircle,
           title: "District Services",
           value: "1,240",
-          subtitle: "Cuttack District total",
+          subtitle: "Lucknow District total",
           borderColor: "#22C55E",
         },
         {
@@ -76,7 +76,7 @@ export function DirectorateDashboard() {
           icon: MessageSquare,
           title: "Active Grievances",
           value: "8",
-          subtitle: "Cuttack District only",
+          subtitle: "Lucknow District only",
           borderColor: "#EF4444",
         },
       ];
@@ -86,14 +86,14 @@ export function DirectorateDashboard() {
           icon: Package,
           title: "Block Stock",
           value: "1,240",
-          subtitle: "Across 8 LACs, Salipur",
+          subtitle: "Across 8 LACs, Bakshi Ka Talab",
           borderColor: "#003366",
         },
         {
           icon: CheckCircle,
           title: "Block Services",
           value: "186",
-          subtitle: "Salipur Block total",
+          subtitle: "Bakshi Ka Talab Block total",
           borderColor: "#22C55E",
         },
         {
@@ -121,9 +121,9 @@ export function DirectorateDashboard() {
   const getMapData = () => {
     if (isDirectorate) {
       return {
-        title: "District Utilisation Map — Odisha",
+        title: "National Utilisation Map",
         items: [
-          { name: "Koraput", utilization: 28, color: "#EF4444" },
+          { name: "Jaipur", utilization: 28, color: "#EF4444" },
           { name: "Malkangiri", utilization: 31, color: "#EF4444" },
           { name: "Nabarangpur", utilization: 35, color: "#EF4444" },
           { name: "Nuapada", utilization: 38, color: "#EF4444" },
@@ -133,36 +133,36 @@ export function DirectorateDashboard() {
           { name: "Boudh", utilization: 55, color: "#F59E0B" },
           { name: "Deogarh", utilization: 58, color: "#F59E0B" },
           { name: "Nayagarh", utilization: 62, color: "#F59E0B" },
-          { name: "Khordha", utilization: 65, color: "#22C55E" },
-          { name: "Puri", utilization: 70, color: "#22C55E" },
-          { name: "Cuttack", utilization: 92, color: "#22C55E" },
+          { name: "Gurugram", utilization: 65, color: "#22C55E" },
+          { name: "Pune", utilization: 70, color: "#22C55E" },
+          { name: "Lucknow", utilization: 92, color: "#22C55E" },
           { name: "Jagatsinghpur", utilization: 75, color: "#22C55E" },
           { name: "Kendrapara", utilization: 78, color: "#22C55E" },
           { name: "Jajpur", utilization: 81, color: "#22C55E" },
           { name: "Bhadrak", utilization: 84, color: "#22C55E" },
-          { name: "Balasore", utilization: 87, color: "#22C55E" },
+          { name: "Bhopal", utilization: 87, color: "#22C55E" },
           { name: "Mayurbhanj", utilization: 90, color: "#22C55E" },
           { name: "Keonjhar", utilization: 93, color: "#22C55E" },
           { name: "Angul", utilization: 70, color: "#22C55E" },
           { name: "Dhenkanal", utilization: 73, color: "#22C55E" },
-          { name: "Sambalpur", utilization: 76, color: "#22C55E" },
+          { name: "Patna", utilization: 76, color: "#22C55E" },
           { name: "Bargarh", utilization: 79, color: "#22C55E" },
           { name: "Jharsuguda", utilization: 82, color: "#22C55E" },
           { name: "Sundargarh", utilization: 85, color: "#22C55E" },
           { name: "Bolangir", utilization: 67, color: "#22C55E" },
           { name: "Sonepur", utilization: 71, color: "#22C55E" },
           { name: "Rayagada", utilization: 74, color: "#22C55E" },
-          { name: "Ganjam", utilization: 94, color: "#22C55E" },
+          { name: "Nashik", utilization: 94, color: "#22C55E" },
         ],
         gridCols: "grid-cols-5",
       };
     } else if (isDistrict) {
       return {
-        title: "Cuttack District — Block View",
+        title: "Lucknow District — Block View",
         items: [
-          { name: "Salipur", utilization: 78, color: "#22C55E" },
-          { name: "Banki", utilization: 72, color: "#22C55E" },
-          { name: "Tigiria", utilization: 54, color: "#F59E0B" },
+          { name: "Bakshi Ka Talab", utilization: 78, color: "#22C55E" },
+          { name: "Malihabad", utilization: 72, color: "#22C55E" },
+          { name: "Sarojini Nagar", utilization: 54, color: "#F59E0B" },
           { name: "Niali", utilization: 32, color: "#EF4444" },
           { name: "Barabati", utilization: 84, color: "#22C55E" },
           { name: "Mahanga", utilization: 48, color: "#F59E0B" },
@@ -177,16 +177,16 @@ export function DirectorateDashboard() {
       };
     } else if (isBlock) {
       return {
-        title: "Salipur Block — LAC View",
+        title: "Bakshi Ka Talab Block — LAC View",
         items: [
-          { name: "Salipur LAC", utilization: 85, color: "#22C55E" },
-          { name: "Kendupalli LAC", utilization: 72, color: "#22C55E" },
-          { name: "Barapal LAC", utilization: 28, color: "#EF4444" },
-          { name: "Tigiria LAC", utilization: 68, color: "#F59E0B" },
-          { name: "Nandpur LAC", utilization: 91, color: "#22C55E" },
-          { name: "Gobindpur LAC", utilization: 76, color: "#22C55E" },
-          { name: "Malipada LAC", utilization: 54, color: "#F59E0B" },
-          { name: "Bentapur LAC", utilization: 82, color: "#22C55E" },
+          { name: "Bakshi Ka Talab LAC", utilization: 85, color: "#22C55E" },
+          { name: "Chinhat LAC", utilization: 72, color: "#22C55E" },
+          { name: "Kakori LAC", utilization: 28, color: "#EF4444" },
+          { name: "Sarojini Nagar LAC", utilization: 68, color: "#F59E0B" },
+          { name: "Mohanlalganj LAC", utilization: 91, color: "#22C55E" },
+          { name: "Gosainganj LAC", utilization: 76, color: "#22C55E" },
+          { name: "Itaunja LAC", utilization: 54, color: "#F59E0B" },
+          { name: "Mall LAC", utilization: 82, color: "#22C55E" },
         ],
         gridCols: "grid-cols-4",
       };
@@ -202,13 +202,13 @@ export function DirectorateDashboard() {
       return [
         {
           icon: TestTube,
-          title: "Semen restocking — CDVO Cuttack",
+          title: "Semen restocking — CDVO Lucknow",
           subtitle: "500 doses, approved by District",
           time: "2 hrs ago",
         },
         {
           icon: Syringe,
-          title: "Vaccine restock — CDVO Koraput",
+          title: "Vaccine restock — CDVO Jaipur",
           subtitle: "200 FMD doses, District approved",
           time: "4 hrs ago",
         },
@@ -235,7 +235,7 @@ export function DirectorateDashboard() {
       return [
         {
           icon: TestTube,
-          title: "Semen restocking — BVO Salipur",
+          title: "Semen restocking — BVO Bakshi Ka Talab",
           subtitle: "50 doses, Block approved",
           time: "1 hr ago",
         },
@@ -247,7 +247,7 @@ export function DirectorateDashboard() {
         },
         {
           icon: Pill,
-          title: "Medicine request — BVO Tigiria",
+          title: "Medicine request — BVO Sarojini Nagar",
           subtitle: "Deworming tablets",
           time: "4 hrs ago",
         },
@@ -257,19 +257,19 @@ export function DirectorateDashboard() {
         {
           icon: TestTube,
           title: "Semen restocking — AIT Rajan Kumar",
-          subtitle: "20 doses, Salipur LAC",
+          subtitle: "20 doses, Bakshi Ka Talab LAC",
           time: "30 mins ago",
         },
         {
           icon: Syringe,
           title: "Vaccine request — AIT Deepak Singh",
-          subtitle: "30 FMD doses, Kendupalli LAC",
+          subtitle: "30 FMD doses, Chinhat LAC",
           time: "2 hrs ago",
         },
         {
           icon: Pill,
           title: "Medicine request — AIT Suresh Pal",
-          subtitle: "Ivermectin, Barapal LAC",
+          subtitle: "Ivermectin, Kakori LAC",
           time: "5 hrs ago",
         },
       ];
@@ -283,21 +283,21 @@ export function DirectorateDashboard() {
   const getRecentActivity = () => {
     if (isDirectorate) {
       return [
-        { action: "Semen batch delivered", location: "Cuttack District", time: "10 mins ago" },
-        { action: "Vaccination completed", location: "Koraput District", time: "25 mins ago" },
+        { action: "Semen batch delivered", location: "Lucknow District", time: "10 mins ago" },
+        { action: "Vaccination completed", location: "Jaipur District", time: "25 mins ago" },
         { action: "Training scheduled", location: "State Training Center", time: "1 hr ago" },
-        { action: "Disease report submitted", location: "Puri District", time: "2 hrs ago" },
-        { action: "MVU deployed", location: "Ganjam District", time: "3 hrs ago" },
-        { action: "Expenditure approved", location: "Balasore District", time: "4 hrs ago" },
-        { action: "Grievance resolved", location: "Khordha District", time: "5 hrs ago" },
+        { action: "Disease report submitted", location: "Pune District", time: "2 hrs ago" },
+        { action: "MVU deployed", location: "Nashik District", time: "3 hrs ago" },
+        { action: "Expenditure approved", location: "Bhopal District", time: "4 hrs ago" },
+        { action: "Grievance resolved", location: "Gurugram District", time: "5 hrs ago" },
         { action: "State procurement finalized", location: "Directorate", time: "6 hrs ago" },
       ];
     } else if (isDistrict) {
       return [
-        { action: "Semen batch delivered", location: "Salipur Block", time: "15 mins ago" },
-        { action: "Vaccination completed", location: "Banki Block", time: "30 mins ago" },
-        { action: "Block report submitted", location: "Tigiria Block", time: "1 hr ago" },
-        { action: "Disease sample sent", location: "DDL Cuttack", time: "2 hrs ago" },
+        { action: "Semen batch delivered", location: "Bakshi Ka Talab Block", time: "15 mins ago" },
+        { action: "Vaccination completed", location: "Malihabad Block", time: "30 mins ago" },
+        { action: "Block report submitted", location: "Sarojini Nagar Block", time: "1 hr ago" },
+        { action: "Disease sample sent", location: "DDL Lucknow", time: "2 hrs ago" },
         { action: "MVU tour approved", location: "Barabati Block", time: "3 hrs ago" },
         { action: "Stock allocated", location: "Mahanga Block", time: "4 hrs ago" },
         { action: "Grievance forwarded", location: "Niali Block", time: "5 hrs ago" },
@@ -305,14 +305,14 @@ export function DirectorateDashboard() {
       ];
     } else if (isBlock) {
       return [
-        { action: "AI service completed", location: "Salipur LAC", time: "5 mins ago" },
-        { action: "Semen stock replenished", location: "Kendupalli LAC", time: "20 mins ago" },
-        { action: "Data entry updated", location: "Nandpur LAC", time: "45 mins ago" },
-        { action: "Vaccination reported", location: "Gobindpur LAC", time: "1 hr ago" },
-        { action: "Sample collected", location: "Tigiria LAC", time: "2 hrs ago" },
-        { action: "Stock alert triggered", location: "Barapal LAC", time: "3 hrs ago" },
-        { action: "Service request assigned", location: "Malipada LAC", time: "4 hrs ago" },
-        { action: "Farm visit completed", location: "Bentapur LAC", time: "5 hrs ago" },
+        { action: "AI service completed", location: "Bakshi Ka Talab LAC", time: "5 mins ago" },
+        { action: "Semen stock replenished", location: "Chinhat LAC", time: "20 mins ago" },
+        { action: "Data entry updated", location: "Mohanlalganj LAC", time: "45 mins ago" },
+        { action: "Vaccination reported", location: "Gosainganj LAC", time: "1 hr ago" },
+        { action: "Sample collected", location: "Sarojini Nagar LAC", time: "2 hrs ago" },
+        { action: "Stock alert triggered", location: "Kakori LAC", time: "3 hrs ago" },
+        { action: "Service request assigned", location: "Itaunja LAC", time: "4 hrs ago" },
+        { action: "Farm visit completed", location: "Mall LAC", time: "5 hrs ago" },
       ];
     }
     return [];
@@ -334,21 +334,21 @@ export function DirectorateDashboard() {
             {isDirectorate && (
               <ScopeBadge
                 scope="directorate"
-                scopeLabel="All Odisha"
-                subLabel="30 Districts"
+                scopeLabel="All India"
+                subLabel="States & UTs"
               />
             )}
             {isDistrict && (
               <ScopeBadge
                 scope="district"
-                scopeLabel="Cuttack District"
+                scopeLabel="Lucknow District"
                 subLabel="12 Blocks"
               />
             )}
             {isBlock && (
               <ScopeBadge
                 scope="block"
-                scopeLabel="Salipur Block"
+                scopeLabel="Bakshi Ka Talab Block"
                 subLabel="8 LACs"
               />
             )}
@@ -494,7 +494,7 @@ export function DirectorateDashboard() {
                     {isDistrict && (
                       <>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Salipur</td>
+                          <td className="py-3 px-4 text-sm">Bakshi Ka Talab</td>
                           <td className="py-3 px-4 text-sm">1,240</td>
                           <td className="py-3 px-4 text-sm">186</td>
                           <td className="py-3 px-4 text-sm">3</td>
@@ -502,7 +502,7 @@ export function DirectorateDashboard() {
                           <td className="py-3 px-4 text-sm">🟢</td>
                         </tr>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Banki</td>
+                          <td className="py-3 px-4 text-sm">Malihabad</td>
                           <td className="py-3 px-4 text-sm">980</td>
                           <td className="py-3 px-4 text-sm">142</td>
                           <td className="py-3 px-4 text-sm">1</td>
@@ -510,7 +510,7 @@ export function DirectorateDashboard() {
                           <td className="py-3 px-4 text-sm">🟢</td>
                         </tr>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Tigiria</td>
+                          <td className="py-3 px-4 text-sm">Sarojini Nagar</td>
                           <td className="py-3 px-4 text-sm">420</td>
                           <td className="py-3 px-4 text-sm">68</td>
                           <td className="py-3 px-4 text-sm">2</td>
@@ -546,7 +546,7 @@ export function DirectorateDashboard() {
                     {isBlock && (
                       <>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Salipur LAC</td>
+                          <td className="py-3 px-4 text-sm">Bakshi Ka Talab LAC</td>
                           <td className="py-3 px-4 text-sm">Rajan Kumar</td>
                           <td className="py-3 px-4 text-sm">82 doses</td>
                           <td className="py-3 px-4 text-sm">24</td>
@@ -554,7 +554,7 @@ export function DirectorateDashboard() {
                           <td className="py-3 px-4 text-sm">🟢</td>
                         </tr>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Kendupalli LAC</td>
+                          <td className="py-3 px-4 text-sm">Chinhat LAC</td>
                           <td className="py-3 px-4 text-sm">Deepak Singh</td>
                           <td className="py-3 px-4 text-sm">45 doses</td>
                           <td className="py-3 px-4 text-sm">18</td>
@@ -562,7 +562,7 @@ export function DirectorateDashboard() {
                           <td className="py-3 px-4 text-sm">🟢</td>
                         </tr>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Barapal LAC</td>
+                          <td className="py-3 px-4 text-sm">Kakori LAC</td>
                           <td className="py-3 px-4 text-sm">Suresh Pal</td>
                           <td className="py-3 px-4 text-sm">12 doses</td>
                           <td className="py-3 px-4 text-sm">8</td>
@@ -570,7 +570,7 @@ export function DirectorateDashboard() {
                           <td className="py-3 px-4 text-sm">🔴 Overdue</td>
                         </tr>
                         <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
-                          <td className="py-3 px-4 text-sm">Tigiria LAC</td>
+                          <td className="py-3 px-4 text-sm">Sarojini Nagar LAC</td>
                           <td className="py-3 px-4 text-sm">Amit Roy</td>
                           <td className="py-3 px-4 text-sm">68 doses</td>
                           <td className="py-3 px-4 text-sm">15</td>

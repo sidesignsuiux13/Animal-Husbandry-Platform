@@ -1,4 +1,4 @@
-For the Farmer role (Ramesh Pradhan), 
+For the Farmer role (Ramesh Yadav), 
 redesign the Grievance module and 
 add a full Activity Log screen.
 
@@ -79,7 +79,7 @@ On submit — success screen:
 │                                 │
 │ Ticket: GR-2025-0892            │
 │ Your issue has been sent to     │
-│ Block Officer Dr. Sarita Mohanty│
+│ Block Officer Dr. Sarita Singh│
 │                                 │
 │ Expected response: 48 hours     │
 │ SMS confirmation sent ✓         │
@@ -105,7 +105,7 @@ Category: 💊 Medicine Issue
 Issue: Wrong medicine dosage given
 Raised: 22 May 2025
 Status: 🔴 Open
-Assigned to: BVO Dr. Sarita Mohanty
+Assigned to: BVO Dr. Sarita Singh
 SLA: Response due by 24 May
 
 Activity log (expanded view):
@@ -117,7 +117,7 @@ Activity log (expanded view):
 │                                 │
 │ 22 May 10:16 AM                 │
 │ Ticket assigned to BVO          │
-│ Dr. Sarita Mohanty              │
+│ Dr. Sarita Singh              │
 │                                 │
 │ 22 May 11:00 AM                 │
 │ BVO acknowledged your complaint │
@@ -135,7 +135,7 @@ Category: 🐄 AI Service
 Issue: Technician arrived late
 Raised: 15 May 2025
 Status: 🟢 Resolved
-Resolved by: BVO Dr. Sarita Mohanty
+Resolved by: BVO Dr. Sarita Singh
 Resolution: 17 May 2025
 
 Activity log:
@@ -165,7 +165,7 @@ Activity log:
 10 May — No response in 48hrs —
 Auto-escalated to District Officer
 10 May — District Officer 
-Dr. Pradeep Rath assigned
+Dr. Pradeep Sharma assigned
 11 May — Resolved: Report sent
 
 [View Report] link
@@ -178,7 +178,7 @@ Title: "Call Support"
 
 Large hotline card:
 ┌─────────────────────────────────┐
-│ 📞 Krushi Samrudhi Helpline     │
+│ 📞 Animal Husbandry Helpline     │
 │                                 │
 │ 1800-XXX-XXXX                   │
 │ (Toll Free)                     │
@@ -190,8 +190,8 @@ Large hotline card:
 │                                 │
 │ Your details will be shared     │
 │ with the helpline agent:        │
-│ Name: Ramesh Pradhan            │
-│ ID: F001 | District: Cuttack   │
+│ Name: Ramesh Yadav            │
+│ ID: F001 | District: Lucknow   │
 └─────────────────────────────────┘
 
 What helpline can help with:
@@ -202,7 +202,7 @@ What helpline can help with:
 - Get advisory on animal health
 
 Language support:
-Available in: Odia | Hindi | English
+Available in: Hindi | Hindi | English
 
 ---
 
@@ -213,7 +213,7 @@ Add new sidebar item for Farmer:
 
 Page title: "My Service History"
 Subtitle: "All requests and 
-services — Ramesh Pradhan"
+services — Ramesh Yadav"
 
 Filter bar:
 [All Types ▼] [All Status ▼] 
@@ -228,7 +228,7 @@ Timeline view
 
 10:30 AM | 🐄 AI Service Request
 Ref: SR-2025-1042
-Animal: OD1234 Holstein Friesian
+Animal: IN1234 Holstein Friesian
 Technician: Rajan Kumar assigned
 Status: 🟢 Completed
 ⭐⭐⭐⭐⭐ You rated this service
@@ -243,7 +243,7 @@ Next AI: Recommended Aug 2025
 
 09:15 AM | 💊 Medicine Service
 Ref: MR-2025-0891
-Animal: OD1234
+Animal: IN1234
 Medicines: Oxytetracycline × 2, 
 Multivitamin × 1
 Charges: ₹200 paid ✓
@@ -254,9 +254,9 @@ Status: 🔵 Pending Block Approval
 
 11:00 AM | 🔬 Disease Sample
 Ref: DDL-2025-0247
-Animal: OD3456
+Animal: IN3456
 Symptoms: Fever, Lameness
-Sample: Blood | DDL Cuttack
+Sample: Blood | DDL Lucknow
 Status: 🟠 Under Testing
 Expected report: 25 May 2025
 [Track Sample ▼]
@@ -265,7 +265,7 @@ Expected report: 25 May 2025
 
 03:00 PM | 💉 Vaccination
 Ref: VR-2025-0441
-Animal: OD1234
+Animal: IN1234
 Vaccine: FMD Vaccine | 2 doses
 Batch: VB-2025-0441
 Charges: ₹150 paid ✓
@@ -285,7 +285,7 @@ Status: 🟢 Resolved — 11 May
 
 09:30 AM | 🐄 AI Service Request
 Ref: SR-2025-0998
-Animal: OD1235
+Animal: IN1235
 Status: 🟢 Completed
 ⭐⭐⭐⭐ You rated this
 [View Details ▼]

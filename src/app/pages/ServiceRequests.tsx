@@ -50,7 +50,7 @@ export function ServiceRequests() {
                 <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
                   Service Requests — State Overview
                 </h1>
-                <ScopeBadge scope="directorate" scopeLabel="All Odisha" subLabel="30 Districts" />
+                <ScopeBadge scope="directorate" scopeLabel="All India" subLabel="States & UTs" />
               </div>
 
               {/* Pipeline Funnel */}
@@ -102,8 +102,8 @@ export function ServiceRequests() {
                       <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
                         <td className="py-3 px-4 text-sm">SR-2025-1045</td>
                         <td className="py-3 px-4 text-sm">Medicine Procurement</td>
-                        <td className="py-3 px-4 text-sm">Cuttack</td>
-                        <td className="py-3 px-4 text-sm">CDVO Cuttack</td>
+                        <td className="py-3 px-4 text-sm">Lucknow</td>
+                        <td className="py-3 px-4 text-sm">CDVO Lucknow</td>
                         <td className="py-3 px-4 text-sm">2 hrs</td>
                         <td className="py-3 px-4">
                           <div className="flex gap-2">
@@ -119,8 +119,8 @@ export function ServiceRequests() {
                       <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
                         <td className="py-3 px-4 text-sm">SR-2025-1044</td>
                         <td className="py-3 px-4 text-sm">Semen Restocking</td>
-                        <td className="py-3 px-4 text-sm">Koraput</td>
-                        <td className="py-3 px-4 text-sm">CDVO Koraput</td>
+                        <td className="py-3 px-4 text-sm">Jaipur</td>
+                        <td className="py-3 px-4 text-sm">CDVO Jaipur</td>
                         <td className="py-3 px-4 text-sm">5 hrs</td>
                         <td className="py-3 px-4">
                           <div className="flex gap-2">
@@ -155,9 +155,9 @@ export function ServiceRequests() {
             <div className="max-w-7xl mx-auto space-y-6">
               <div>
                 <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
-                  Service Requests — Cuttack District
+                  Service Requests — Lucknow District
                 </h1>
-                <ScopeBadge scope="district" scopeLabel="Cuttack District" subLabel="12 Blocks" />
+                <ScopeBadge scope="district" scopeLabel="Lucknow District" subLabel="12 Blocks" />
               </div>
 
               <Tabs defaultValue="pending" className="w-full">
@@ -187,8 +187,8 @@ export function ServiceRequests() {
                           <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
                             <td className="py-3 px-4 text-sm">SR-2025-1043</td>
                             <td className="py-3 px-4 text-sm">Semen Restocking</td>
-                            <td className="py-3 px-4 text-sm">Salipur</td>
-                            <td className="py-3 px-4 text-sm">BVO Salipur</td>
+                            <td className="py-3 px-4 text-sm">Bakshi Ka Talab</td>
+                            <td className="py-3 px-4 text-sm">BVO Bakshi Ka Talab</td>
                             <td className="py-3 px-4">
                               <div className="flex gap-2">
                                 <Button size="sm" style={{ backgroundColor: "#10B981", color: "white" }}>
@@ -217,7 +217,7 @@ export function ServiceRequests() {
                 <TabsContent value="completed">
                   <Card className="p-6">
                     <p className="text-sm" style={{ color: "#6B7280" }}>
-                      Completed requests in Cuttack District
+                      Completed requests in Lucknow District
                     </p>
                   </Card>
                 </TabsContent>
@@ -240,9 +240,9 @@ export function ServiceRequests() {
             <div className="max-w-7xl mx-auto space-y-6">
               <div>
                 <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
-                  Service Requests — Salipur Block
+                  Service Requests — Bakshi Ka Talab Block
                 </h1>
-                <ScopeBadge scope="block" scopeLabel="Salipur Block" subLabel="8 LACs" />
+                <ScopeBadge scope="block" scopeLabel="Bakshi Ka Talab Block" subLabel="8 LACs" />
               </div>
 
               <Tabs defaultValue="unassigned" className="w-full">
@@ -262,7 +262,7 @@ export function ServiceRequests() {
                 <TabsContent value="unassigned">
                   <Card className="p-6">
                     <h3 className="mb-4 font-semibold" style={{ color: "#003366" }}>
-                      Unassigned Requests from Salipur Block
+                      Unassigned Requests from Bakshi Ka Talab Block
                     </h3>
                     <div className="overflow-x-auto">
                       <table className="w-full">
@@ -279,8 +279,8 @@ export function ServiceRequests() {
                           <tr style={{ borderBottom: "1px solid #E5E7EB" }}>
                             <td className="py-3 px-4 text-sm">SR-2025-1046</td>
                             <td className="py-3 px-4 text-sm">AI Service</td>
-                            <td className="py-3 px-4 text-sm">Bikash Jena</td>
-                            <td className="py-3 px-4 text-sm">Salipur Village</td>
+                            <td className="py-3 px-4 text-sm">Vikas Kumar</td>
+                            <td className="py-3 px-4 text-sm">Bakshi Ka Talab Village</td>
                             <td className="py-3 px-4">
                               <Select>
                                 <SelectTrigger className="w-48">
@@ -351,7 +351,7 @@ export function ServiceRequests() {
                 <TabsContent value="completed">
                   <Card className="p-6">
                     <p className="text-sm" style={{ color: "#6B7280" }}>
-                      Completed requests in Salipur Block
+                      Completed requests in Bakshi Ka Talab Block
                     </p>
                   </Card>
                 </TabsContent>
@@ -376,7 +376,7 @@ export function ServiceRequests() {
                 <h1 className="text-2xl font-bold mb-2" style={{ color: "#003366" }}>
                   My Service Requests
                 </h1>
-                <ScopeBadge scope="lac" scopeLabel="Salipur LAC" subLabel="Salipur Block, Cuttack" />
+                <ScopeBadge scope="lac" scopeLabel="Bakshi Ka Talab LAC" subLabel="Bakshi Ka Talab Block, Lucknow" />
               </div>
 
               <Tabs defaultValue="log" className="w-full">

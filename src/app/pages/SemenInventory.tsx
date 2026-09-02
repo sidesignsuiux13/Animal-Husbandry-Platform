@@ -27,7 +27,7 @@ export function SemenInventory() {
   const [activeTab, setActiveTab] = useState("inventory");
   const inventoryData = [
     {
-      location: "Salipur LAC",
+      location: "Bakshi Ka Talab LAC",
       type: "Normal Cattle",
       animal: "Cattle",
       code: "SC-2025-0441",
@@ -38,7 +38,7 @@ export function SemenInventory() {
       statusColor: "#22C55E",
     },
     {
-      location: "Koraput LAC",
+      location: "Jaipur LAC",
       type: "Sex Sorted",
       animal: "Cattle",
       code: "SC-2025-0442",
@@ -49,7 +49,7 @@ export function SemenInventory() {
       statusColor: "#EF4444",
     },
     {
-      location: "Phulbani LAC",
+      location: "Ranchi LAC",
       type: "Normal Buffalo",
       animal: "Buffalo",
       code: "SB-2025-0221",
@@ -60,7 +60,7 @@ export function SemenInventory() {
       statusColor: "#F59E0B",
     },
     {
-      location: "Cuttack LAC",
+      location: "Lucknow LAC",
       type: "Normal Cattle",
       animal: "Cattle",
       code: "SC-2025-0443",
@@ -82,7 +82,7 @@ export function SemenInventory() {
       statusColor: "#22C55E",
     },
     {
-      location: "Balasore LAC",
+      location: "Bhopal LAC",
       type: "Normal Cattle",
       animal: "Cattle",
       code: "SC-2025-0445",
@@ -93,7 +93,7 @@ export function SemenInventory() {
       statusColor: "#F59E0B",
     },
     {
-      location: "Sambalpur LAC",
+      location: "Patna LAC",
       type: "Normal Buffalo",
       animal: "Buffalo",
       code: "SB-2025-0222",
@@ -104,7 +104,7 @@ export function SemenInventory() {
       statusColor: "#22C55E",
     },
     {
-      location: "Puri LAC",
+      location: "Pune LAC",
       type: "Sex Sorted",
       animal: "Cattle",
       code: "SC-2025-0446",
@@ -289,12 +289,12 @@ export function SemenInventory() {
                     {/* Result Card */}
                     <div className="p-4 rounded-lg" style={{ backgroundColor: '#F9FAFB', border: '1px solid #E5E7EB' }}>
                       <Badge className="mb-3 px-3 py-1" style={{ backgroundColor: '#DCFCE7', color: '#16A34A' }}>
-                        ✓ Fetched from Krushak Odisha
+                        ✓ Fetched from National Farmer Registry
                       </Badge>
 
                       <div className="space-y-2">
-                        <h4 className="font-semibold" style={{ color: '#003366' }}>Ramesh Pradhan</h4>
-                        <p className="text-sm" style={{ color: '#6B7280' }}>Cuttack | Salipur Block</p>
+                        <h4 className="font-semibold" style={{ color: '#003366' }}>Ramesh Yadav</h4>
+                        <p className="text-sm" style={{ color: '#6B7280' }}>Lucknow | Bakshi Ka Talab Block</p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Mobile: 987654XXXX</p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Livestock: 3 cattle</p>
                       </div>
@@ -311,7 +311,7 @@ export function SemenInventory() {
                       <Input
                         placeholder="Enter Cattle Tag Number"
                         className="mb-3"
-                        defaultValue="OD1234"
+                        defaultValue="IN1234"
                         style={{ borderColor: '#E5E7EB' }}
                       />
                       <Button className="w-full" style={{ backgroundColor: '#FF6600', color: 'white' }}>
@@ -326,7 +326,7 @@ export function SemenInventory() {
                       </Badge>
 
                       <div className="space-y-2 mb-4">
-                        <p className="text-sm" style={{ color: '#6B7280' }}>Tag: <strong style={{ color: '#003366' }}>OD1234</strong></p>
+                        <p className="text-sm" style={{ color: '#6B7280' }}>Tag: <strong style={{ color: '#003366' }}>IN1234</strong></p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Holstein Friesian | 4 yrs</p>
                         <p className="text-sm" style={{ color: '#6B7280' }}>Last AI: 3 months ago</p>
                       </div>
@@ -435,12 +435,12 @@ export function SemenInventory() {
                       <label className="block text-sm mb-2" style={{ color: '#6B7280' }}>Source of Distribution</label>
                       <Select>
                         <SelectTrigger style={{ borderColor: '#E5E7EB' }}>
-                          <SelectValue placeholder="Salipur Block" />
+                          <SelectValue placeholder="Bakshi Ka Talab Block" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="salipur">Salipur Block</SelectItem>
-                          <SelectItem value="cuttack">Cuttack Block</SelectItem>
-                          <SelectItem value="banki">Banki Block</SelectItem>
+                          <SelectItem value="bakshi-ka-talab">Bakshi Ka Talab Block</SelectItem>
+                          <SelectItem value="lucknow">Lucknow Block</SelectItem>
+                          <SelectItem value="malihabad">Malihabad Block</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -489,11 +489,11 @@ export function SemenInventory() {
                     </TableHeader>
                     <TableBody>
                       {[
-                        { date: "22 May", farmer: "Ramesh Pradhan", animal: "OD1234", code: "SC-2025-0441", type: "Normal Cattle", admin: "Dr. Kumar", status: "Completed" },
-                        { date: "21 May", farmer: "Sunita Behera", animal: "OD2345", code: "SC-2025-0442", type: "Sex Sorted", admin: "Dr. Singh", status: "Completed" },
-                        { date: "20 May", farmer: "Manoj Nayak", animal: "OD3456", code: "SB-2025-0221", type: "Buffalo", admin: "Dr. Patel", status: "Completed" },
-                        { date: "19 May", farmer: "Priya Sahoo", animal: "OD4567", code: "SC-2025-0443", type: "Normal Cattle", admin: "Dr. Kumar", status: "Completed" },
-                        { date: "18 May", farmer: "Bikash Jena", animal: "OD5678", code: "SC-2025-0444", type: "Normal Cattle", admin: "Dr. Singh", status: "Completed" },
+                        { date: "22 May", farmer: "Ramesh Yadav", animal: "IN1234", code: "SC-2025-0441", type: "Normal Cattle", admin: "Dr. Kumar", status: "Completed" },
+                        { date: "21 May", farmer: "Sunita Devi", animal: "IN2345", code: "SC-2025-0442", type: "Sex Sorted", admin: "Dr. Singh", status: "Completed" },
+                        { date: "20 May", farmer: "Manoj Kumar", animal: "IN3456", code: "SB-2025-0221", type: "Buffalo", admin: "Dr. Patel", status: "Completed" },
+                        { date: "19 May", farmer: "Priya Verma", animal: "IN4567", code: "SC-2025-0443", type: "Normal Cattle", admin: "Dr. Kumar", status: "Completed" },
+                        { date: "18 May", farmer: "Vikas Kumar", animal: "IN5678", code: "SC-2025-0444", type: "Normal Cattle", admin: "Dr. Singh", status: "Completed" },
                       ].map((row, index) => (
                         <TableRow key={index} style={index % 2 === 1 ? { backgroundColor: '#F9FAFB' } : {}}>
                           <TableCell style={{ color: '#6B7280', fontSize: '12px' }}>{row.date}</TableCell>
@@ -860,18 +860,18 @@ export function SemenInventory() {
                 <div className="mb-4">
                   <div className="grid grid-cols-6 gap-1 mb-3">
                     {[
-                      { name: "Koraput", color: "#EF4444" },
+                      { name: "Jaipur", color: "#EF4444" },
                       { name: "Malkangiri", color: "#EF4444" },
                       { name: "Kalahandi", color: "#F59E0B" },
                       { name: "Gajapati", color: "#F59E0B" },
-                      { name: "Cuttack", color: "#22C55E" },
-                      { name: "Khordha", color: "#22C55E" },
-                      { name: "Puri", color: "#22C55E" },
-                      { name: "Balasore", color: "#22C55E" },
+                      { name: "Lucknow", color: "#22C55E" },
+                      { name: "Gurugram", color: "#22C55E" },
+                      { name: "Pune", color: "#22C55E" },
+                      { name: "Bhopal", color: "#22C55E" },
                       { name: "Mayurbhanj", color: "#F59E0B" },
                       { name: "Keonjhar", color: "#22C55E" },
                       { name: "Sundargarh", color: "#22C55E" },
-                      { name: "Sambalpur", color: "#F59E0B" },
+                      { name: "Patna", color: "#F59E0B" },
                       { name: "Bargarh", color: "#22C55E" },
                       { name: "Jharsuguda", color: "#22C55E" },
                       { name: "Deogarh", color: "#F59E0B" },
@@ -882,7 +882,7 @@ export function SemenInventory() {
                       { name: "Kendrapara", color: "#22C55E" },
                       { name: "Jagatsinghpur", color: "#22C55E" },
                       { name: "Nayagarh", color: "#F59E0B" },
-                      { name: "Ganjam", color: "#22C55E" },
+                      { name: "Nashik", color: "#22C55E" },
                       { name: "Kandhamal", color: "#EF4444" },
                       { name: "Boudh", color: "#F59E0B" },
                       { name: "Sonepur", color: "#22C55E" },
@@ -915,17 +915,17 @@ export function SemenInventory() {
                     </TableHeader>
                     <TableBody>
                       <TableRow>
-                        <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>Koraput</TableCell>
+                        <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>Jaipur</TableCell>
                         <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>45,240</TableCell>
                         <TableCell style={{ color: '#EF4444', fontSize: '12px' }}>28%</TableCell>
                       </TableRow>
                       <TableRow style={{ backgroundColor: '#F9FAFB' }}>
-                        <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>Cuttack</TableCell>
+                        <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>Lucknow</TableCell>
                         <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>62,180</TableCell>
                         <TableCell style={{ color: '#22C55E', fontSize: '12px' }}>82%</TableCell>
                       </TableRow>
                       <TableRow>
-                        <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>Khordha</TableCell>
+                        <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>Gurugram</TableCell>
                         <TableCell style={{ color: '#1A1A1A', fontSize: '12px' }}>58,920</TableCell>
                         <TableCell style={{ color: '#22C55E', fontSize: '12px' }}>78%</TableCell>
                       </TableRow>
@@ -1042,7 +1042,7 @@ export function SemenInventory() {
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell style={{ color: '#1A1A1A' }}>Salipur LAC</TableCell>
+                      <TableCell style={{ color: '#1A1A1A' }}>Bakshi Ka Talab LAC</TableCell>
                       <TableCell style={{ color: '#6B7280' }}>22 May</TableCell>
                       <TableCell style={{ color: '#6B7280' }}>0 days</TableCell>
                       <TableCell>
@@ -1052,7 +1052,7 @@ export function SemenInventory() {
                       </TableCell>
                     </TableRow>
                     <TableRow style={{ backgroundColor: '#F9FAFB' }}>
-                      <TableCell style={{ color: '#1A1A1A' }}>Kendupalli</TableCell>
+                      <TableCell style={{ color: '#1A1A1A' }}>Chinhat</TableCell>
                       <TableCell style={{ color: '#6B7280' }}>22 May</TableCell>
                       <TableCell style={{ color: '#6B7280' }}>0 days</TableCell>
                       <TableCell>
@@ -1062,7 +1062,7 @@ export function SemenInventory() {
                       </TableCell>
                     </TableRow>
                     <TableRow style={{ backgroundColor: '#FEE2E2' }}>
-                      <TableCell style={{ color: '#1A1A1A' }}>Banki LAC</TableCell>
+                      <TableCell style={{ color: '#1A1A1A' }}>Malihabad LAC</TableCell>
                       <TableCell style={{ color: '#6B7280' }}>14 May</TableCell>
                       <TableCell style={{ color: '#EF4444' }}>8 days</TableCell>
                       <TableCell>
@@ -1072,7 +1072,7 @@ export function SemenInventory() {
                       </TableCell>
                     </TableRow>
                     <TableRow style={{ backgroundColor: '#FEE2E2' }}>
-                      <TableCell style={{ color: '#1A1A1A' }}>Tigiria LAC</TableCell>
+                      <TableCell style={{ color: '#1A1A1A' }}>Sarojini Nagar LAC</TableCell>
                       <TableCell style={{ color: '#6B7280' }}>10 May</TableCell>
                       <TableCell style={{ color: '#EF4444' }}>12 days</TableCell>
                       <TableCell>
@@ -1108,10 +1108,10 @@ export function SemenInventory() {
                 <div className="grid grid-cols-4 gap-2 mb-4">
                   <Select>
                     <SelectTrigger style={{ borderColor: '#E5E7EB' }}>
-                      <SelectValue placeholder="All Districts" />
+                      <SelectValue placeholder="All States" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="all">All Districts</SelectItem>
+                      <SelectItem value="all">All States</SelectItem>
                     </SelectContent>
                   </Select>
                   <Select>
@@ -1155,14 +1155,14 @@ export function SemenInventory() {
                   </TableHeader>
                   <TableBody>
                     {[
-                      { farmer: "Ramesh P", aadhaar: "****3456", code: "SC-441", type: "Normal", animal: "OD1234", date: "22 May", admin: "Dr Kumar", district: "Cuttack" },
-                      { farmer: "Sunita B", aadhaar: "****7890", code: "SC-442", type: "Sex Sorted", animal: "OD2345", date: "21 May", admin: "Dr Singh", district: "Khordha" },
-                      { farmer: "Manoj N", aadhaar: "****2341", code: "SB-221", type: "Buffalo", animal: "OD3456", date: "20 May", admin: "Dr Patel", district: "Puri" },
-                      { farmer: "Priya S", aadhaar: "****5678", code: "SC-443", type: "Normal", animal: "OD4567", date: "19 May", admin: "Dr Kumar", district: "Cuttack" },
-                      { farmer: "Bikash J", aadhaar: "****9012", code: "SC-444", type: "Normal", animal: "OD5678", date: "18 May", admin: "Dr Singh", district: "Balasore" },
-                      { farmer: "Asha M", aadhaar: "****3434", code: "SC-445", type: "Sex Sorted", animal: "OD6789", date: "17 May", admin: "Dr Rao", district: "Ganjam" },
-                      { farmer: "Ravi K", aadhaar: "****7878", code: "SB-222", type: "Buffalo", animal: "OD7890", date: "16 May", admin: "Dr Patel", district: "Puri" },
-                      { farmer: "Deepa R", aadhaar: "****1212", code: "SC-446", type: "Normal", animal: "OD8901", date: "15 May", admin: "Dr Kumar", district: "Cuttack" },
+                      { farmer: "Ramesh Y", aadhaar: "****3456", code: "SC-441", type: "Normal", animal: "IN1234", date: "22 May", admin: "Dr Kumar", district: "Lucknow" },
+                      { farmer: "Sunita D", aadhaar: "****7890", code: "SC-442", type: "Sex Sorted", animal: "IN2345", date: "21 May", admin: "Dr Singh", district: "Gurugram" },
+                      { farmer: "Manoj K", aadhaar: "****2341", code: "SB-221", type: "Buffalo", animal: "IN3456", date: "20 May", admin: "Dr Patel", district: "Pune" },
+                      { farmer: "Priya V", aadhaar: "****5678", code: "SC-443", type: "Normal", animal: "IN4567", date: "19 May", admin: "Dr Kumar", district: "Lucknow" },
+                      { farmer: "Vikas K", aadhaar: "****9012", code: "SC-444", type: "Normal", animal: "IN5678", date: "18 May", admin: "Dr Singh", district: "Bhopal" },
+                      { farmer: "Asha M", aadhaar: "****3434", code: "SC-445", type: "Sex Sorted", animal: "IN6789", date: "17 May", admin: "Dr Rao", district: "Nashik" },
+                      { farmer: "Ravi K", aadhaar: "****7878", code: "SB-222", type: "Buffalo", animal: "IN7890", date: "16 May", admin: "Dr Patel", district: "Pune" },
+                      { farmer: "Deepa R", aadhaar: "****1212", code: "SC-446", type: "Normal", animal: "IN8901", date: "15 May", admin: "Dr Kumar", district: "Lucknow" },
                     ].map((row, index) => (
                       <TableRow key={index} style={index % 2 === 1 ? { backgroundColor: '#F9FAFB' } : {}}>
                         <TableCell style={{ color: '#1A1A1A', fontSize: '11px' }}>{row.farmer}</TableCell>

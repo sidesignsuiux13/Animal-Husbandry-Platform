@@ -1,5 +1,5 @@
 For the Field Technician login (Rajan Kumar, 
-AIT Salipur LAC), add complete input forms 
+AIT Bakshi Ka Talab LAC), add complete input forms 
 for all service types a technician performs 
 after receiving a farmer call.
 
@@ -70,10 +70,10 @@ Large input field
 On entering 9876543210:
 Show fetched result:
 ┌─────────────────────────────────┐
-│ ✓ Fetched from Krushak Odisha   │
+│ ✓ Fetched from National Farmer Registry   │
 │                                 │
-│ Ramesh Pradhan                  │
-│ Salipur Village, Cuttack        │
+│ Ramesh Yadav                  │
+│ Bakshi Ka Talab Village, Lucknow        │
 │ Mobile: 987654XXXX              │
 │ Aadhaar: XXXX-XXXX-1234         │
 │ Livestock: 3 cattle registered  │
@@ -86,8 +86,8 @@ Farmer Name: [text input]
 Mobile Number: [number input]
 Aadhaar Number: [text input]
 Village: [text input]
-Block: Salipur (auto-filled)
-District: Cuttack (auto-filled)
+Block: Bakshi Ka Talab (auto-filled)
+District: Lucknow (auto-filled)
 [Save & Continue] button
 
 After farmer confirmed:
@@ -97,14 +97,14 @@ request is for:"
 
 Animal cards (from Bharat Pashudhan):
 ┌──────────────────────┐
-│ 🐄 OD1234            │
+│ 🐄 IN1234            │
 │ Holstein Friesian    │
 │ 4 years              │
 │ Last AI: 3 months    │
 │ [Select]             │
 └──────────────────────┘
 ┌──────────────────────┐
-│ 🐄 OD1235            │
+│ 🐄 IN1235            │
 │ Sahiwal              │
 │ 2 years              │
 │ Last vaccine: FMD    │
@@ -130,8 +130,8 @@ Title: "Step 2 of 3 — AI Service Details"
 Progress: ● ● ○
 
 Service card at top (auto-filled):
-Farmer: Ramesh Pradhan ✓
-Animal: OD1234 Holstein Friesian ✓
+Farmer: Ramesh Yadav ✓
+Animal: IN1234 Holstein Friesian ✓
 
 Form fields:
 
@@ -148,7 +148,7 @@ Semen Type Required:
 Semen Dose Code:
 [SC-2025-0441 ▼]
 (dropdown of available 
-doses at Salipur LAC only)
+doses at Bakshi Ka Talab LAC only)
 Stock shown: 82 doses available 🟢
 
 Bull ID: [BL-2024-0112]
@@ -185,13 +185,13 @@ Summary card:
 ┌─────────────────────────────────┐
 │ AI SERVICE REQUEST              │
 │                                 │
-│ Farmer: Ramesh Pradhan          │
-│ Animal: OD1234 Holstein Friesian│
+│ Farmer: Ramesh Yadav          │
+│ Animal: IN1234 Holstein Friesian│
 │ Semen: Sex Sorted Cattle        │
 │ Dose: SC-2025-0441              │
 │ Date: 22 May 2025, Afternoon    │
 │ Technician: Rajan Kumar (me)    │
-│ LAC: Salipur LAC                │
+│ LAC: Bakshi Ka Talab LAC                │
 └─────────────────────────────────┘
 
 What happens next (info box, blue):
@@ -221,8 +221,8 @@ Title: "Step 2 of 3 — Medicine Details"
 Progress: ● ● ○
 
 Service card at top (auto-filled):
-Farmer: Ramesh Pradhan ✓
-Animal: OD1234 Holstein Friesian ✓
+Farmer: Ramesh Yadav ✓
+Animal: IN1234 Holstein Friesian ✓
 
 Form fields:
 
@@ -291,8 +291,8 @@ Summary card:
 ┌─────────────────────────────────┐
 │ MEDICINE SERVICE RECORD         │
 │                                 │
-│ Farmer: Ramesh Pradhan          │
-│ Animal: OD1234 Holstein Friesian│
+│ Farmer: Ramesh Yadav          │
+│ Animal: IN1234 Holstein Friesian│
 │ Symptoms: Fever, Lethargy,      │
 │ Diarrhoea                       │
 │ Severity: Moderate              │
@@ -307,9 +307,9 @@ Summary card:
 What happens next (info box):
 "Medicine record will be saved 
 to the system and submitted to 
-Block Officer (Dr. Sarita Mohanty) 
+Block Officer (Dr. Sarita Singh) 
 for review and approval.
-Stock at Salipur LAC will be 
+Stock at Bakshi Ka Talab LAC will be 
 updated automatically."
 
 Stock update preview:
@@ -322,8 +322,8 @@ Multivitamin: 12 → 11 units
 On submit:
 Success screen:
 ✓ Medicine Record Saved: MR-2025-0891
-Submitted to: BVO Dr. Sarita Mohanty
-Stock updated at Salipur LAC ✓
+Submitted to: BVO Dr. Sarita Singh
+Stock updated at Bakshi Ka Talab LAC ✓
 SMS sent to farmer ✓
 [View in My Requests] button
 [Log Another Request] button
@@ -337,8 +337,8 @@ Title: "Step 2 of 3 — Vaccination Details"
 Progress: ● ● ○
 
 Service card at top:
-Farmer: Ramesh Pradhan ✓
-Animal: OD1234 Holstein Friesian ✓
+Farmer: Ramesh Yadav ✓
+Animal: IN1234 Holstein Friesian ✓
 
 Vaccination History shown 
 (from Bharat Pashudhan):
@@ -388,7 +388,7 @@ Payment: ● Received ○ Pending ○ Waived
 
 Current LAC Stock:
 FMD Vaccine: 45 doses 🟡 Low
-Warning: "Stock low at Salipur LAC.
+Warning: "Stock low at Bakshi Ka Talab LAC.
 Consider raising restocking request."
 [Raise Restocking Request] 
 amber link button
@@ -408,8 +408,8 @@ Summary card:
 ┌─────────────────────────────────┐
 │ VACCINATION RECORD              │
 │                                 │
-│ Farmer: Ramesh Pradhan          │
-│ Animal: OD1234 Holstein Friesian│
+│ Farmer: Ramesh Yadav          │
+│ Animal: IN1234 Holstein Friesian│
 │ Vaccine: FMD Vaccine            │
 │ Batch: VB-2025-0441             │
 │ Qty: 2 doses                    │
@@ -425,7 +425,7 @@ directly to the system.
 Bharat Pashudhan will be updated.
 Booster reminder will be sent to 
 farmer on 21 Aug 2025.
-Stock at Salipur LAC updated."
+Stock at Bakshi Ka Talab LAC updated."
 
 Stock update preview:
 FMD Vaccine: 45 → 43 doses
@@ -452,8 +452,8 @@ Title: "Step 2 of 3 — Disease Details"
 Progress: ● ● ○
 
 Service card at top:
-Farmer: Ramesh Pradhan ✓
-Animal: OD1234 Holstein Friesian ✓
+Farmer: Ramesh Yadav ✓
+Animal: IN1234 Holstein Friesian ✓
 
 Vaccination history 
 (from Bharat Pashudhan):
@@ -503,9 +503,9 @@ Sample to Collect:
 ○ Milk
 
 Submit Sample To:
-● DDL Cuttack (nearest)
-○ DDL Bhubaneswar
-○ DDL Sambalpur
+● DDL Lucknow (nearest)
+○ DDL Delhi
+○ DDL Patna
 ○ ADRI Phulnakhara
 ○ Other
 
@@ -524,7 +524,7 @@ Quantity: [input]
 Photo Evidence:
 [📷 Take/Upload Photo] button
 Shows: 1 photo uploaded placeholder
-"Geo-tagged: Salipur Village"
+"Geo-tagged: Bakshi Ka Talab Village"
 Timestamp: 22 May 2025 10:45 AM
 
 Notes:
@@ -544,8 +544,8 @@ Summary card:
 ┌─────────────────────────────────┐
 │ DISEASE SAMPLE SUBMISSION       │
 │                                 │
-│ Farmer: Ramesh Pradhan          │
-│ Animal: OD1234 Holstein Friesian│
+│ Farmer: Ramesh Yadav          │
+│ Animal: IN1234 Holstein Friesian│
 │ Symptoms: Fever, Nasal          │
 │ Discharge, Lameness             │
 │ Duration: 1-3 days              │
@@ -553,7 +553,7 @@ Summary card:
 │ Suspected: FMD                  │
 │ Urgency: 🔴 URGENT              │
 │ Sample: Blood                   │
-│ Submit to: DDL Cuttack          │
+│ Submit to: DDL Lucknow          │
 │ Isolated: ✓ Yes                 │
 │ Submitted by: Rajan Kumar       │
 └─────────────────────────────────┘
@@ -561,8 +561,8 @@ Summary card:
 Urgency alert box (red, because urgent):
 "⚠ Urgent submission detected.
 This will be flagged to 
-BVO Dr. Sarita Mohanty and 
-CDVO Dr. Pradeep Rath immediately.
+BVO Dr. Sarita Singh and 
+CDVO Dr. Pradeep Sharma immediately.
 If confirmed as FMD, outbreak 
 protocol will be triggered."
 
@@ -570,7 +570,7 @@ What happens next (info box):
 "Sample registration will be 
 created in Disease Surveillance module.
 Registration number generated.
-DDL Cuttack will be notified.
+DDL Lucknow will be notified.
 Block Officer will be alerted."
 
 [← Edit Details]
@@ -580,9 +580,9 @@ red button (because urgent)
 On submit:
 Success screen:
 ✓ Sample Registered: DDL-2025-0247
-Submitted to: DDL Cuttack
+Submitted to: DDL Lucknow
 Urgency: 🔴 URGENT flagged
-BVO Dr. Sarita Mohanty notified ✓
+BVO Dr. Sarita Singh notified ✓
 SMS sent to farmer ✓
 
 Registration card to share 
@@ -590,9 +590,9 @@ with farmer:
 ┌─────────────────────────────────┐
 │ SAMPLE REGISTRATION             │
 │ Ref: DDL-2025-0247              │
-│ Farmer: Ramesh Pradhan          │
+│ Farmer: Ramesh Yadav          │
 │ Date: 22 May 2025               │
-│ Track at: DDL Cuttack           │
+│ Track at: DDL Lucknow           │
 │ SMS sent to farmer ✓            │
 └─────────────────────────────────┘
 
@@ -657,7 +657,7 @@ orange button
 On submit:
 ✓ Restocking Request Raised
 Request: SR-REST-2025-0234
-Submitted to: BVO Dr. Sarita Mohanty
+Submitted to: BVO Dr. Sarita Singh
 Expected response: within 24 hours
 [Track Request Status] button
 
@@ -671,7 +671,7 @@ Show all submitted forms
 in one unified view:
 
 Title: "My Submitted Records"
-Scope: "📍 Salipur LAC"
+Scope: "📍 Bakshi Ka Talab LAC"
 
 Filter bar:
 [All Types ▼] [All Status ▼] 
@@ -683,24 +683,24 @@ Showing 5 of 12 results
 Request cards with status:
 
 SR-2025-1042 | 🐄 AI Service
-Farmer: Ramesh Pradhan | OD1234
+Farmer: Ramesh Yadav | IN1234
 Submitted: 22 May 10:30 AM
 Status: 🟢 Recorded in System
 Semen dose: SC-2025-0441 logged
 [View Details]
 
 MR-2025-0891 | 💊 Medicine
-Farmer: Sunita Behera | OD2345
+Farmer: Sunita Devi | IN2345
 Submitted: 22 May 09:15 AM
 Status: 🔵 Pending Block Approval
-Waiting: BVO Dr. Sarita Mohanty
+Waiting: BVO Dr. Sarita Singh
 Approval stepper mini:
 ● AIT ✓ → Block ⏳ → 
   District → Directorate
 [View Details]
 
 VR-2025-0441 | 💉 Vaccine
-Farmer: Ramesh Pradhan | OD1234
+Farmer: Ramesh Yadav | IN1234
 Submitted: 21 May 03:00 PM
 Status: 🟢 Recorded Directly
 No approval needed for routine 
@@ -708,10 +708,10 @@ vaccination
 [View Details]
 
 DDL-2025-0247 | 🔬 Disease Sample
-Farmer: Manoj Nayak | OD3456
+Farmer: Manoj Kumar | IN3456
 Submitted: 21 May 11:00 AM
 Status: 🟠 Urgent — Flagged to BVO
-At: DDL Cuttack — Under Testing
+At: DDL Lucknow — Under Testing
 [View Details]
 
 SR-REST-0234 | 📦 Restocking

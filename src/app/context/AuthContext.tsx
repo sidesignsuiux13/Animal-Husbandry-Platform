@@ -19,14 +19,14 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const USERS: Record<string, { password: string; user: User }> = {
-  "admin@dahvs.odisha.gov.in": {
+  "admin@dahd.gov.in": {
     password: "Admin@123",
     user: {
       name: "Dr. Arun Mishra",
       role: "Directorate Admin",
-      badge: "Directorate | State Level",
-      scope: "All Odisha — 30 Districts",
-      email: "admin@dahvs.odisha.gov.in",
+      badge: "Directorate | National Level",
+      scope: "All India — States & UTs",
+      email: "admin@dahd.gov.in",
       dashboard: "/dashboard/directorate",
       allowedModules: [
         "/dashboard/directorate",
@@ -46,14 +46,14 @@ const USERS: Record<string, { password: string; user: User }> = {
       ],
     },
   },
-  "cdvo.cuttack@dahvs.odisha.gov.in": {
+  "cdvo.lucknow@dahd.gov.in": {
     password: "District@123",
     user: {
-      name: "Dr. Pradeep Rath",
-      role: "CDVO — Cuttack District",
-      badge: "District Officer | Cuttack",
-      scope: "Cuttack District — 12 Blocks",
-      email: "cdvo.cuttack@dahvs.odisha.gov.in",
+      name: "Dr. Pradeep Sharma",
+      role: "CDVO — Lucknow District",
+      badge: "District Officer | Lucknow",
+      scope: "Lucknow District — 12 Blocks",
+      email: "cdvo.lucknow@dahd.gov.in",
       dashboard: "/dashboard/directorate",
       allowedModules: [
         "/dashboard/directorate",
@@ -71,14 +71,14 @@ const USERS: Record<string, { password: string; user: User }> = {
       ],
     },
   },
-  "bvo.salipur@dahvs.odisha.gov.in": {
+  "bvo.bakshi-ka-talab@dahd.gov.in": {
     password: "Block@123",
     user: {
-      name: "Dr. Sarita Mohanty",
-      role: "BVO — Salipur Block",
-      badge: "Block Officer | Salipur, Cuttack",
-      scope: "Salipur Block — 8 LACs",
-      email: "bvo.salipur@dahvs.odisha.gov.in",
+      name: "Dr. Sarita Singh",
+      role: "BVO — Bakshi Ka Talab Block",
+      badge: "Block Officer | Bakshi Ka Talab, Lucknow",
+      scope: "Bakshi Ka Talab Block — 8 LACs",
+      email: "bvo.bakshi-ka-talab@dahd.gov.in",
       dashboard: "/dashboard/directorate",
       allowedModules: [
         "/dashboard/directorate",
@@ -94,14 +94,14 @@ const USERS: Record<string, { password: string; user: User }> = {
       ],
     },
   },
-  "ait.salipur@dahvs.odisha.gov.in": {
+  "ait.bakshi-ka-talab@dahd.gov.in": {
     password: "Field@123",
     user: {
       name: "Rajan Kumar",
-      role: "AIT — Salipur LAC",
-      badge: "AIT | Salipur LAC",
-      scope: "Salipur LAC, Salipur Block, Cuttack",
-      email: "ait.salipur@dahvs.odisha.gov.in",
+      role: "AIT — Bakshi Ka Talab LAC",
+      badge: "AIT | Bakshi Ka Talab LAC",
+      scope: "Bakshi Ka Talab LAC, Bakshi Ka Talab Block, Lucknow",
+      email: "ait.bakshi-ka-talab@dahd.gov.in",
       dashboard: "/dashboard/field-technician",
       allowedModules: [
         "/dashboard/field-technician",
@@ -120,14 +120,14 @@ const USERS: Record<string, { password: string; user: User }> = {
       ],
     },
   },
-  "farmer@odisha.gov.in": {
+  "farmer@dahd.gov.in": {
     password: "Farmer@123",
     user: {
-      name: "Ramesh Pradhan",
+      name: "Ramesh Yadav",
       role: "Farmer",
-      badge: "Farmer | Salipur, Cuttack",
-      scope: "My Farm — Salipur, Cuttack",
-      email: "farmer@odisha.gov.in",
+      badge: "Farmer | Bakshi Ka Talab, Lucknow",
+      scope: "My Farm — Bakshi Ka Talab, Lucknow",
+      email: "farmer@dahd.gov.in",
       dashboard: "/dashboard/field-technician",
       allowedModules: [
         "/dashboard/field-technician",

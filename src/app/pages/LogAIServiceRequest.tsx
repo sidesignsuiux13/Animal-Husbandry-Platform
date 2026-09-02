@@ -97,7 +97,7 @@ export function LogAIServiceRequest() {
                 <h1 className="text-2xl font-bold" style={{ color: "#003366" }}>
                   AI Service Request
                 </h1>
-                <ScopeBadge scope="lac" scopeLabel="Salipur LAC" subLabel="Cuttack District" />
+                <ScopeBadge scope="lac" scopeLabel="Bakshi Ka Talab LAC" subLabel="Lucknow District" />
               </div>
             </div>
 
@@ -329,7 +329,7 @@ export function LogAIServiceRequest() {
                       <div className="flex justify-between">
                         <span style={{ color: "#6B7280" }}>LAC:</span>
                         <span className="font-medium" style={{ color: "#003366" }}>
-                          Salipur LAC
+                          Bakshi Ka Talab LAC
                         </span>
                       </div>
                     </div>
