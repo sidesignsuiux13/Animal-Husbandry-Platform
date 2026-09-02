@@ -187,56 +187,36 @@ export function LoginPage() {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left side - Image background with glass content */}
+      {/* Left side - Image background with bottom helpline */}
       <div
-        className="hidden lg:flex lg:w-1/2 items-center justify-center p-10 relative overflow-hidden bg-cover bg-center"
+        className="hidden lg:flex lg:w-1/2 items-end justify-center px-10 pb-6 relative overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(0, 51, 102, 0.68), rgba(0, 102, 204, 0.38)), url(${loginBackground})`,
         }}
       >
         <div
-          className="w-full max-w-xl rounded-lg border border-white/30 p-8 text-center shadow-2xl"
+          className="w-full max-w-md rounded-lg border border-white/30 p-5 text-center shadow-2xl"
           style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.18)',
-            backdropFilter: 'blur(18px)',
-            WebkitBackdropFilter: 'blur(18px)',
+            backgroundColor: 'rgba(0, 51, 102, 0.42)',
+            backdropFilter: 'blur(16px)',
+            WebkitBackdropFilter: 'blur(16px)',
           }}
         >
-          <div className="space-y-8">
-            <div>
-              <h1 className="text-4xl font-bold text-white mb-4">
-              ARD Digital Platform
-              </h1>
-              <p className="text-xl text-blue-50 mb-8">
-                F&ARD Department, Government of Odisha
-              </p>
-              <div className="text-blue-50 text-sm">
-                <p className="mb-2">Streamlining livestock services across Odisha</p>
-                <p>Empowering farmers, technicians, and administrators</p>
-              </div>
-            </div>
-
-            <div
-              className="rounded-lg p-6 text-center"
-              style={{ backgroundColor: 'rgba(0, 51, 102, 0.42)' }}
-            >
-              <Phone className="w-12 h-12 mx-auto mb-4 text-white" />
-              <h3 className="text-lg font-bold text-white mb-2">
-                Krushi Samrudhi Helpline
-              </h3>
-              <p className="text-3xl font-bold text-white mb-3">1800-XXX-XXXX</p>
-              <p className="text-sm text-blue-50 mb-1">(Toll Free)</p>
-              <p className="text-xs text-blue-100 mb-4">
-                Available: 8 AM — 8 PM | All days
-              </p>
-              <div
-                className="p-3 rounded text-xs text-blue-50"
-                style={{ backgroundColor: 'rgba(255, 255, 255, 0.16)' }}
-              >
-                <p className="mb-1">Call for support with:</p>
-                <p>AI Service • Medicine • Vaccination • Disease Reports</p>
-              </div>
-            </div>
+          <Phone className="w-9 h-9 mx-auto mb-3 text-white" />
+          <h3 className="text-base font-bold text-white mb-2">
+            Krushi Samrudhi Helpline
+          </h3>
+          <p className="text-2xl font-bold text-white mb-2">1800-XXX-XXXX</p>
+          <p className="text-xs text-blue-50 mb-1">(Toll Free)</p>
+          <p className="text-xs text-blue-100 mb-3">
+            Available: 8 AM — 8 PM | All days
+          </p>
+          <div
+            className="p-2.5 rounded text-xs text-blue-50"
+            style={{ backgroundColor: 'rgba(255, 255, 255, 0.16)' }}
+          >
+            <p className="mb-1">Call for support with:</p>
+            <p>AI Service • Medicine • Vaccination • Disease Reports</p>
           </div>
         </div>
       </div>
