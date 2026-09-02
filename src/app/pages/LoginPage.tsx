@@ -222,9 +222,14 @@ export function LoginPage() {
       </div>
 
       {/* Right side - Login card */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center p-8" style={{ backgroundColor: '#F9FAFB' }}>
-        <Card className="w-full max-w-md p-8 shadow-xl" style={{ backgroundColor: '#FFFFFF' }}>
-          <div className="lg:hidden text-center mb-6">
+      <div
+        className="w-full lg:w-1/2 flex items-center justify-center p-8"
+        style={{
+          background: 'linear-gradient(135deg, #F8FAFC 0%, #F3F7FB 48%, #FFF7F0 100%)',
+        }}
+      >
+        <Card className="w-full max-w-md p-8 shadow-xl border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
+          <div className="lg:hidden text-center mb-8">
             <h2 className="font-bold" style={{ color: '#003366' }}>
               ARD Digital Platform
             </h2>
@@ -233,96 +238,100 @@ export function LoginPage() {
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold mb-6 text-center" style={{ color: '#003366' }}>
+          <h2 className="text-2xl font-bold mb-10 text-center" style={{ color: '#003366' }}>
             Login to Continue
           </h2>
 
-          {/* Email Input */}
-          <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#374151' }}>
-              Email Address
-            </label>
-            <div className="relative">
-              <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" style={{ color: '#9CA3AF' }} />
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="pl-10"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && handleLogin()}
-              />
-            </div>
-          </div>
+          <div className="space-y-8">
+            <div className="space-y-6">
+              {/* Email Input */}
+              <div>
+                <label className="block text-sm font-medium mb-2" style={{ color: '#374151' }}>
+                  Email Address
+                </label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" style={{ color: '#9CA3AF' }} />
+                  <Input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="h-10 pl-10"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && handleLogin()}
+                  />
+                </div>
+              </div>
 
-          {/* Password Input */}
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#374151' }}>
-              Password
-            </label>
-            <div className="relative">
-              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" style={{ color: '#9CA3AF' }} />
-              <Input
-                type="password"
-                placeholder="Enter your password"
-                className="pl-10"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && handleLogin()}
-              />
+              {/* Password Input */}
+              <div>
+                <label className="block text-sm font-medium mb-2" style={{ color: '#374151' }}>
+                  Password
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" style={{ color: '#9CA3AF' }} />
+                  <Input
+                    type="password"
+                    placeholder="Enter your password"
+                    className="h-10 pl-10"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && handleLogin()}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Login Button */}
-          <Button
-            className="w-full mb-6"
-            style={{ backgroundColor: '#FF6600', color: '#FFFFFF' }}
-            onClick={handleLogin}
-            disabled={isLoading}
-          >
-            {isLoading ? "Logging in..." : "Login"}
-          </Button>
-
-          {/* Divider */}
-          <div className="relative mb-6">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t" style={{ borderColor: '#E5E7EB' }} />
-            </div>
-            <div className="relative flex justify-center text-sm">
-              <span className="px-4 bg-white" style={{ color: '#6B7280' }}>
-                Quick Demo Access
-              </span>
-            </div>
-          </div>
-
-          {/* Demo profile dropdown */}
-          <div className="space-y-3">
-            <Select value={selectedDemoEmail} onValueChange={setSelectedDemoEmail} disabled={isLoading}>
-              <SelectTrigger className="h-11">
-                <SelectValue placeholder="Select a demo profile" />
-              </SelectTrigger>
-              <SelectContent>
-                {quickLoginUsers.map((userRecord) => (
-                  <SelectItem key={userRecord.email} value={userRecord.email}>
-                    {userRecord.roleLabel} - {userRecord.name}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            {/* Login Button */}
             <Button
-              variant="outline"
-              className="w-full"
-              onClick={handleDemoLogin}
+              className="w-full h-10"
+              style={{ backgroundColor: '#FF6600', color: '#FFFFFF' }}
+              onClick={handleLogin}
               disabled={isLoading}
-              style={{ borderColor: '#003366', color: '#003366' }}
             >
-              Use Selected Demo Profile
+              {isLoading ? "Logging in..." : "Login"}
             </Button>
-          </div>
 
-          {/* Footer */}
-          <div className="mt-6 text-center text-xs" style={{ color: '#9CA3AF' }}>
-            <p>Powered by OCAC | Government of Odisha</p>
+            {/* Divider */}
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t" style={{ borderColor: '#E5E7EB' }} />
+              </div>
+              <div className="relative flex justify-center text-sm">
+                <span className="px-4 bg-white" style={{ color: '#6B7280' }}>
+                  Quick Demo Access
+                </span>
+              </div>
+            </div>
+
+            {/* Demo profile dropdown */}
+            <div className="space-y-3">
+              <Select value={selectedDemoEmail} onValueChange={setSelectedDemoEmail} disabled={isLoading}>
+                <SelectTrigger className="h-10">
+                  <SelectValue placeholder="Select a demo profile" />
+                </SelectTrigger>
+                <SelectContent>
+                  {quickLoginUsers.map((userRecord) => (
+                    <SelectItem key={userRecord.email} value={userRecord.email}>
+                      {userRecord.roleLabel} - {userRecord.name}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              <Button
+                variant="outline"
+                className="w-full h-10"
+                onClick={handleDemoLogin}
+                disabled={isLoading}
+                style={{ borderColor: '#003366', color: '#003366' }}
+              >
+                Use Selected Demo Profile
+              </Button>
+            </div>
+
+            {/* Footer */}
+            <div className="pt-2 text-center text-xs" style={{ color: '#9CA3AF' }}>
+              <p>Powered by OCAC | Government of Odisha</p>
+            </div>
           </div>
         </Card>
       </div>
